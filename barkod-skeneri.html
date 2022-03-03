@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--specify the character-->
+		<meta charset="UTF-8">
+		<!--include responsive mode-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--description-->
+		<meta name="description" content="Kao neizostavan deo opreme za automatsku identifikaciju, u našoj ponudi je kompletan portfolio skenera od potvrđenih proizvođača ovog tipa opreme!">
+		<!--tittle-->
+		<title>Barkod skeneri!</title>
+		<!--include Raleway font from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<!--include jQuery and Bootstrap-->
+		<script type="text/javascript" src="js/jquery-v3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		<!--include CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!--include jQuery Validation Plugin-->
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<!--icon-->
+		<link rel="icon" type="image/png" href="img/index.png">
+	</head>
+	<body>
+		<header>
+			<div class="header-background flex">
+				<a href="index.html"><img src="img/logo-header.png" class="logo"></a>
+				<div class="space"></div>
+				<ul class="flex">
+					<li class="regular-mode">Rešenja
+						<ul>
+							<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+							<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+							<li><a href="automatizacija.html">Automatizacija</a></li>
+							<li><a href="nicelabel.html">NiceLabel softver</a></li>
+						</ul>
+					</li>
+					<li class="selected-page regular-mode">Oprema
+						<ul>
+							<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+							<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+							<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+							<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+							<li><a class="selected-option" href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+							<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+							<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+							<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+						</ul>
+					</li>
+					<li class="regular-mode">Usluge
+						<ul>
+							<li><a href="print-menadzment.html">Print menadžment</a></li>
+							<li><a href="servis-podrska.html">Servis i podrška</a></li>
+							<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+						</ul>
+					</li>
+					<li><a href="novosti.html">Novosti</a></li>
+					<li><a href="kontakt.php">Kontakt</a></li>
+				</ul>
+			</div>
+			<div class="responsive-header">
+				<div class="responsive-flex flex">
+					<a href="index.html"><img class="icon-responsive" src="img/icon.png"></a>
+					<div class="space"></div>
+					<div class="responsive-menu">
+						<img src="img/menu.png" class="manu-responsive">
+						<ul class="main-menu-responsive">
+							<li class="has-children">Rešenja
+								<ul>
+									<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+									<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+									<li><a href="automatizacija.html">Automatizacija</a></li>
+									<li><a href="nicelabel.html">NiceLabel softver</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Oprema
+								<ul>
+									<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+									<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+									<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+									<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+									<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+									<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+									<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+									<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Usluge
+								<ul>
+									<li><a href="print-menadzment.html">Print menadžment</a></li>
+									<li><a href="servis-podrska.html">Servis i podrška</a></li>
+									<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+								</ul>
+							</li>
+							<li><a href="novosti.html">Novosti</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="more-options">
+			<ul>
+				<li class="pisite-nam"><span><img src="img/mail.png"></span>Pišite nam</li>
+				<li><span><img src="img/language.png"></span>English</li>
+			</ul>
+		</div>
+		<div class="write-us">
+			<img src="img/exit.png" class="exit">
+			<form method="post" action="contact.php" class="contactUs" id="contactUs">
+				<p class="fot">
+					<label for="name" class="label">Ime :</label>
+					<input type="text" name="name" placeholder="Ime..." class="input">
+				</p>
+				<p>
+					<label for="email" class="label">Vaš e-mail :</label>
+					<input type="text" name="email" placeholder="E-mail..." class="input">
+				</p>
+				<p>
+					<label for="subject" class="label">Tema :</label>
+					<input type="text" name="subject" placeholder="Tema..." class="input">
+				</p>
+				<p>
+					<label for="comments" class="label">Poruka :</label>
+					<textarea name="comments" rows="6" placeholder="Poruka..." class="input"></textarea>
+				</p>
+				<p class="sum">
+					<img src="img/suma.png">
+					<input type="text" name="sum" placeholder="Suma..." class="input">
+				</p>
+				<p class="posalji">
+					<input name="submit" type="submit" value="Pošalji">
+				</p>
+				<p class="stranica">
+					<input type="text" name="stranica" value="barkod-skeneri.html" class="input">
+				</p>
+			</form>
+		</div>
+		<div class="main-image">
+			<div class="page">
+				<img src="img/oprema/bar-kod-skeneri/skeneri.jpg">
+			</div>
+			<div class="introduce">
+				<h1>Bar-kod skeneri</h1>
+			</div>
+		</div>
+		<div class="content content-background-image-barkod-skeneri">
+			<div class="function-description">
+				<div class="function-description-width function-description-header">
+					<div class="margin">
+						<h2>Bar-kod skeneri</h2>
+						<div class="line"></div>
+						<div class="image-flex flex">
+							<div>
+								<img src="img/oprema/bar-kod-skeneri/ds2200.png">
+								<img src="img/oprema/bar-kod-skeneri/ds2200-cb.png" class="black-white-image 1">
+								<p>Zebra DS <span>2200</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/bar-kod-skeneri/ds3600.png">
+								<img src="img/oprema/bar-kod-skeneri/ds3600-cb.png" class="black-white-image 2">
+								<p>Zebra DS <span>3600</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/bar-kod-skeneri/ps9100.png">
+								<img src="img/oprema/bar-kod-skeneri/ps9100-cb.png" class="black-white-image 3">
+								<p>Datalogic PowerScan <span>9100</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/bar-kod-skeneri/ps9300.png">
+								<img src="img/oprema/bar-kod-skeneri/ps9300-cb.png" class="black-white-image 4">
+								<p>Datalogic PowerScan <span>9300</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even">
+				<div class="function-description-width">
+					<h3>Bar-kod skeneri</h3>
+					<p class="description-header"><span>K</span>ao neizostavan deo opreme za automatsku identifikaciju, u našoj ponudi je kompletan portfolio skenera od potvrđenih proizvođača ovog tipa opreme – Zebra i Datalogic. <span>I</span>mamo rešenja bilo da se radi o retail-u, magacinskom poslovanju, proizvodnji, logistici, automobilskoj industriji, kurirskim službala ili farmaciji. <span>T</span>ako ćemo Vas podržati sa fiksnim i hand-held uređajima kablovski povezanim ili bežičnim, za čitanje praktično svih mogućih tipova barkod zapisa. <span>N</span>a osnovu Vašeg zahteva i konkretnih potreba konsultujemo Vas u vezi investicije i maksimalnog povrata kada je funkcionalnost i pouzdanost u pitanju.</p>
+				</div>
+			</div>
+			<div class="function-description odd 1-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra DS <span>2200</span></h4>
+							<ul>
+								<li>Skeneri široke namene uglavnom namenjeni za point of sale mesta.</li>
+								<li>Brzo i precizno očitavanje 1D ili 2D barkodova, bilo da ga skenirate sa štampane nalepnice ili u bilo kom elektronski prikazanom obliku.</li>
+								<li>Pristupačno rešenje kojim dobijate odlične performanse i fleksibilnost u radu.</li>
+								<li>Dolazi u dve varijante: stacionarni - DS2208 ili bežični - DS2278.</li>
+								<li>Mnogi utility alati za deployment i upravljanje uređajem, kroz par klikova na barkodove za setovanje vršite zaista jednostavnu konfiguraciju.</li>
+								<li>Nudi omnidirekciono skeniranje, intuitivni aimer za lako pozicioniranje i brzinu u radu.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/bar-kod-skeneri/ds2200.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even 2-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra DS <span>3600</span></h4>
+							<ul>
+								<li>Članovi Zebrine serije 3600 predstavljaju ultimativno rešenje za najzahtevnije korisnike.</li>
+								<li>Modeli iz ove serije dolaze u opciji DS3608 sa kablom ili DS3678 koji su u bežičnoj varijanti.</li>
+								<li>Ono u čemu se modeli razlikuju jesu različiti scan engine-i koji se u njih ugrađuju zavisno od namene i zahteva, specijalizovane namene za praktično sve industrijske potrebe.</li>
+								<li>Tako je SR model za čitanje 1D/2D standard range, HP – pored 1D/2D kodova skenira i slike, OCR dokumente, HD – za sken jako malih i zgusnuto štampanih kodova, DP – za skeniranje direktno markiranih površina bez obzira na odsjaj i površinu, ER – extended range za skeniranje 1D/2D barkoda do razdaljine 21m.</li>
+								<li>Dramatično podiže efikasnost rada zaposlenih prilikom skeniranja bilo štampanih ili elektronski prikazanih barkodova.</li>
+								<li>Otpornost na prašinu i vodu, kao i svi modeli iz serije potvrđeni IP67 standardom izrade.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/bar-kod-skeneri/ds3600.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description odd 3-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Datalogic PowerScan <span>9100</span></h4>
+							<ul>
+								<li>Moćan i robustan industrijski skener, IP65 standard izrade trpi pad sa 2.0 metra visine.</li>
+								<li>Nova scan tehnologija pozicioniranja sa green linijom za skeniranje, 1D imager.</li>
+								<li>Potvrda čitanja patentiranom 3GL – three green line tehnologijom.</li>
+								<li>Više modela u ponudi, stacionarni ili wireless modeli, sa opcijom i alfanumeričke tastature.</li>
+								<li>Bežična komunikacija preko Bluetooth-a ili Datalogic STAR Cordless system narrow band radio.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/bar-kod-skeneri/ps9100.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even 4-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Datalogic PowerScan <span>9300</span></h4>
+							<ul>
+								<li>Skener za beskompromisno čitanje barkodova u najtežim aplikacijama.</li>
+								<li>Čitanje na bazi najnovije Datalogic dokazane tehnologije, 1D imager.</li>
+								<li>Ekstremne temperature od -20°C do +50°C ne predstvaljanju nikakvo ograničenje za očitavanje bez greške čak i kada su u pitanju ekstremno mali barkodovi visoke rezolucije.</li>
+								<li>Standardni interfejsi keyboard, usb i rs232 sa mnoštvom drugih opcija zavisno od konkretnog modela iz serije 9300.</li>
+								<li>Ergonomski oblik sa dobro izbalansiranom težinom uređaja za optimalno rukovanje i svakodnevni rad operatera.</li>
+								<li>AutoRange opcija za čitanje barkodova na razdaljinama i do 11,5m.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/bar-kod-skeneri/ps9300.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-information">
+				<div class="footer-information-width flex">
+					<div>
+						<h6>Informatizacija</h6>
+						<span></span>
+						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
+						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
+					</div>
+					<div>
+						<h6>Automatizacija</h6>
+						<span></span>
+						<a href="automatizacija.html">Automatsko deklarisanje</a>
+						<a href="nicelabel.html">NiceLabel rešenje</a>
+						<a href="print-menadzment.html">Print menadžment</a>
+					</div>
+					<div>
+						<h6>Oprema</h6>
+						<span></span>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+					</div>
+					<div>
+						<h6>Auto-ID</h6>
+						<span></span>
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+					</div>
+					<div>
+						<h6>Kontakt</h6>
+						<span></span>
+						<p>Bulevar Arsenija Čarnojevića 166</p>
+						<p>11070 Novi Beograd</p>
+						<p>T: +381 (0)11 40 44 900</p>
+						<p>E: info@zebracon.rs</p>
+					</div>
+				</div>
+			</div>
+			<div class="background"></div>
+			<div class="footer-copyright">
+				<p>Copyright © <script>document.write(new Date().getFullYear())</script>, Zebracon d.o.o.</p>
+			</div>
+		</footer>
+		<a id="button" class="animate"></a>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+   			<div class="loader-section section-right"></div>
+		</div>
+	</body>
+</html>

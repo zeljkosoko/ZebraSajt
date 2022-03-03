@@ -1,0 +1,3 @@
+Kod slika za opremu:
+	- Maksimalna visina 200px
+	- Lightness mora biti na +20 kod crno belih slika

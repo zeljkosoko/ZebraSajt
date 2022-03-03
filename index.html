@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--specify the character-->
+		<meta charset="UTF-8">
+		<!--include responsive mode-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--description-->
+		<meta name="description" content="Zebracon tim nudi jedinstvena, sigurna i pouzdana rešenja u oblastima - magacinsko poslovanje, praćenje proizvodnje i print management-a!">
+		<!--tittle-->
+		<title>Kompanija Zebracon!</title>
+		<!--include Raleway font from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<!--include jQuery and Bootstrap-->
+		<script type="text/javascript" src="js/jquery-v3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		<!--include CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!--include jQuery Validation Plugin-->
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<!--icon-->
+		<link rel="icon" type="image/png" href="img/index.png">
+	</head>
+	<body>
+		<header>
+			<div class="header-background flex">
+				<a href="index.html"><img src="img/logo-header.png" class="logo"></a>
+				<div class="space"></div>
+				<ul class="flex">
+					<li class="regular-mode">Rešenja
+						<ul>
+							<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+							<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+							<li><a href="automatizacija.html">Automatizacija</a></li>
+							<li><a href="nicelabel.html">NiceLabel softver</a></li>
+						</ul>
+					</li>
+					<li class="regular-mode">Oprema
+						<ul>
+							<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+							<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+							<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+							<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+							<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+							<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+							<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+							<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+						</ul>
+					</li>
+					<li class="regular-mode">Usluge
+						<ul>
+							<li><a href="print-menadzment.html">Print menadžment</a></li>
+							<li><a href="servis-podrska.html">Servis i podrška</a></li>
+							<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+						</ul>
+					</li>
+					<li><a href="novosti.html">Novosti</a></li>
+					<li><a href="kontakt.php">Kontakt</a></li>
+				</ul>
+			</div>
+			<div class="responsive-header">
+				<div class="responsive-flex flex">
+					<a href="index.html"><img class="icon-responsive" src="img/icon.png"></a>
+					<div class="space"></div>
+					<div class="responsive-menu">
+						<img src="img/menu.png" class="manu-responsive">
+						<ul class="main-menu-responsive">
+							<li class="has-children">Rešenja
+								<ul>
+									<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+									<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+									<li><a href="automatizacija.html">Automatizacija</a></li>
+									<li><a href="nicelabel.html">NiceLabel softver</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Oprema
+								<ul>
+									<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+									<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+									<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+									<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+									<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+									<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+									<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+									<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Usluge
+								<ul>
+									<li><a href="print-menadzment.html">Print menadžment</a></li>
+									<li><a href="servis-podrska.html">Servis i podrška</a></li>
+									<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+								</ul>
+							</li>
+							<li><a href="novosti.html">Novosti</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="more-options">
+			<ul>
+				<li class="pisite-nam"><span><img src="img/mail.png"></span>Pišite nam</li>
+				<li><span><img src="img/language.png"></span>English</li>
+			</ul>
+		</div>
+		<div class="write-us">
+			<img src="img/exit.png" class="exit">
+			<form method="post" action="contact.php" class="contactUs" id="contactUs">
+				<p class="fot">
+					<label for="name" class="label">Ime :</label>
+					<input type="text" name="name" placeholder="Ime..." class="input">
+				</p>
+				<p>
+					<label for="email" class="label">Vaš e-mail :</label>
+					<input type="text" name="email" placeholder="E-mail..." class="input">
+				</p>
+				<p>
+					<label for="subject" class="label">Tema :</label>
+					<input type="text" name="subject" placeholder="Tema..." class="input">
+				</p>
+				<p>
+					<label for="comments" class="label">Poruka :</label>
+					<textarea name="comments" rows="6" placeholder="Poruka..." class="input"></textarea>
+				</p>
+				<p class="sum">
+					<img src="img/suma.png">
+					<input type="text" name="sum" placeholder="Suma..." class="input">
+				</p>
+				<p class="posalji">
+					<input name="submit" type="submit" value="Pošalji">
+				</p>
+				<p class="stranica">
+					<input type="text" name="stranica" value="index.html" class="input">
+				</p>
+			</form>
+		</div>
+		<div class="slider-image">
+			<div id="carousel-example-generic" class="carousel slide custom-carousel" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="overlay animated fadeInDownBig"></div>
+						<img src="img/index/softverska_platforma.jpg" alt="...">
+						<div class="carousel-caption">
+							<h2 class="animated fadeInLeft">Softverska<br> platforma</h2>
+							<h3 class="animated fadeInRight">Web platforma je
+								kreirana i dizajnirana da se lako može prilagoditi Vašim specifičnim zahtevima.</h3>
+							<a class="more scroll-down animated fadeInUp">Više</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="overlay animated fadeInDownBig"></div>
+						<img src="img/index/magacin.jpg" alt="...">
+						<div class="carousel-caption">
+							<h2 class="animated fadeInLeft">Magacinsko<br> poslovanje</h2>
+							<h3 class="animated fadeInRight">Upravljanje, kontrola i optimizacija svih procesa,
+								kao i kompletna automatizacija </h3>
+							<a href="magacinsko-poslovanje.html" class="more animated fadeInUp">Više</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="overlay animated fadeInDownBig"></div>
+						<img src="img/index/pracenje_proizvodnje.jpg" alt="...">
+						<div class="carousel-caption">
+							<h2 class="animated fadeInLeft">Praćenje<br> proizvodnje</h2>
+							<h3 class="animated fadeInRight">Kompletna informatizacija svih proizvodnih procesa,
+								praćenje, upravljanje i kontrola, operacija i kvaliteta u realnom vremenu.</h3>
+							<a class="more animated fadeInUp">Više</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content content-background-image-index">
+			<div class="first">
+				<h2>O kompaniji Zebracon</h2>
+				<p>Razvojem novih i implementacijom gotovih rešenja, kompanija Zebracon je uspela da se približi specifičnim zahtevima svojih klijenata. Naš stručni tim uspešno realizuje projekte implementacije rešenja za informatizaciju proizvodnih procesa i automatizaciju skladišta sa postojećim informacionim sistemima korisnika.<br><br>
+				Uz pažljivo planiranje, savetovanje i tehničku podršku, u mogućnosti smo da Vaš sistem održavamo i brinemo onako kako model profesionalnog pristupa i uspešnog poslovanja nalaže. Uz konstantno planiranje resursa, održavanje, podršku i konsalting, kao i ponudom opreme, spremni smo da odgovorimo na Vaše najviše zahteve u svim kritičnim procesima logistike, distribucije, proizvodnje...<br><br>
+				Profesionalnim pristupom i potpunom posvećenošću naš tim učiniće Vaše poslovanje produktivnijim, fleksibilnijim i konkurentnijim.</p>
+			</div>
+			<div class="second">
+				<div class="rotated-row-1"></div>
+				<div class="rotated-row-2"></div>
+				<div class="rotated-row-3"></div>
+				<div class="box"></div>
+			</div>
+			<div class="third">
+				<div class="grupa-novosti flex">
+					<div class="novost">
+						<img src="img/novosti/tranzicija.jpg">
+						<p class="time">16. Decembar 2017</p>
+						<h2>Izvršena uspešna tranzicija na nove verzije standarda ISO 9001:2015 i 14001:2015!</h2>
+						<p>Zebracon sa zadovoljstvom objavljuje da je uspešno izvršio tranziciju Sistema menadžmenta kvalitetom ISO 9001:2008 i Sistema zaštite životne sredine ISO 14001:2004...</p>
+					</div>
+					<div class="novost">
+						<img src="img/novosti/polipak1.jpg">
+						<p class="time">06. Novembar 2017</p>
+						<h2>Uspešna implementacija Easy(MES)WMS sistema u kompaniji Polipak doo, na lokaciji u Beogradu.</h2>
+						<p>Kompanija Polipak doo se bavi proizvodnjom polietilenske ambalaže i papirne galanterije. Nakon uspešne implementacije Easy(MES)WMS sistema na lokaciji u Batočini, Polipak je odlučio da proširi saradnju...</p>
+					</div>
+					<div class="novost">
+						<img src="img/novosti/farmalogist.jpg">
+						<p class="time">14. Oktobar 2017</p>
+						<h2>Implementacija bar-kod štampe na PRINTRONIX linijsko matričnim štampačima u kompaniji Farmalogist.</h2>
+						<p>Kompanija Farmalogist je savremena veleprodaja sa distributivnim centrima u Beogradu, Nišu, Kraljevu i Novom Sadu. Skladišni kapaciteti imaju više od 9.500 m2...</p>
+					</div>
+					<div class="novost">
+						<img src="img/novosti/atlantic.jpg">
+						<p class="time">23. Jun 2017</p>
+						<h2>Implementacija bar-kod štampe na PRINTRONIX linijsko matričnim štampačima u kompaniji Atlantic.</h2>
+						<p>Atlantic Grupa je multinacionalna kompanija koja u svojem poslovanju objedinjuje proizvodnju, razvoj, prodaju i distribuciju robe široke potrošnje...</p>
+					</div>
+					<div class="novost">
+						<img src="img/novosti/polipak.jpg">
+						<p class="time">5. Maj 2016</p>
+						<h2>Uspešno izvršena implementacija sistema za praćenje proizvodnje – Easy MES, u kompaniji Polipak.</h2>
+						<p>Porastom proizvodnih kapaciteta, kompanija Polipak koja se dugi niz godina bavi proizvodnjom polietilenske ambalaže i papirne galanterije se u svom poslovanju suočila sa nekoliko problema...</p>
+					</div>
+					<div class="novost">
+						<img src="img/novosti/west.jpg">
+						<p class="time">26. April 2017</p>
+						<h2>Saradnja sa kompanijom West Pharmaceutical Services u oblasti termo štampe.</h2>
+						<p>Američka kompanija West Pharmaceutical Services je vodeća svetska kompanija u razvoju komponenata farmaceutske ambalaže, sa preko 50 godina iskustva u radu...</p>
+					</div>
+				</div>
+			</div>
+			<div class="partners flex">
+				<a href="https://www.microsoft.com/sr-latn-rs"><img src="img/index/partneri_01.png"></a>
+				<a href="https://www.nicelabel.com/"><img src="img/index/partneri_02.png"></a>
+				<a href="https://www.zebra.com/us/en.html"><img src="img/index/partneri_03.png"></a>
+				<a href="https://printronixautoid.com/" class="last-partner"><img src="img/index/partneri_04.png"></a>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-information">
+				<div class="footer-information-width flex">
+					<div>
+						<h6>Informatizacija</h6>
+						<span></span>
+						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
+						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
+					</div>
+					<div>
+						<h6>Automatizacija</h6>
+						<span></span>
+						<a href="automatizacija.html">Automatsko deklarisanje</a>
+						<a href="nicelabel.html">NiceLabel rešenje</a>
+						<a href="print-menadzment.html">Print menadžment</a>
+					</div>
+					<div>
+						<h6>Oprema</h6>
+						<span></span>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+					</div>
+					<div>
+						<h6>Auto-ID</h6>
+						<span></span>
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+					</div>
+					<div>
+						<h6>Kontakt</h6>
+						<span></span>
+						<p>Bulevar Arsenija Čarnojevića 166</p>
+						<p>11070 Novi Beograd</p>
+						<p>T: +381 (0)11 40 44 900</p>
+						<p>E: info@zebracon.rs</p>
+					</div>
+				</div>
+			</div>
+			<div class="background"></div>
+			<div class="footer-copyright">
+				<p>Copyright © <script>document.write(new Date().getFullYear())</script>, Zebracon d.o.o.</p>
+			</div>
+		</footer>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+   			<div class="loader-section section-right"></div>
+		</div>
+	</body>
+</html>

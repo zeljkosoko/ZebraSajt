@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--specify the character-->
+		<meta charset="UTF-8">
+		<!--include responsive mode-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--description-->
+		<meta name="description" content="Servisno – tehnička podrška sa kojom Vaša investicija traje duže!">
+		<!--tittle-->
+		<title>Servis i podrška!</title>
+		<!--include Raleway font from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<!--include jQuery and Bootstrap-->
+		<script type="text/javascript" src="js/jquery-v3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		<!--include CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!--include jQuery Validation Plugin-->
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<!--icon-->
+		<link rel="icon" type="image/png" href="img/index.png">
+	</head>
+	<body>
+		<header>
+			<div class="header-background flex">
+				<a href="index.html"><img src="img/logo-header.png" class="logo"></a>
+				<div class="space"></div>
+				<ul class="flex">
+					<li class="regular-mode">Rešenja
+						<ul>
+							<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+							<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+							<li><a href="automatizacija.html">Automatizacija</a></li>
+							<li><a href="nicelabel.html">NiceLabel softver</a></li>
+						</ul>
+					</li>
+					<li class="regular-mode">Oprema
+						<ul>
+							<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+							<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+							<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+							<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+							<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+							<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+							<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+							<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+						</ul>
+					</li>
+					<li class="selected-page regular-mode">Usluge
+						<ul>
+							<li><a href="print-menadzment.html">Print menadžment</a></li>
+							<li><a class="selected-option" href="servis-podrska.html">Servis i podrška</a></li>
+							<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+						</ul>
+					</li>
+					<li><a href="novosti.html">Novosti</a></li>
+					<li><a href="kontakt.php">Kontakt</a></li>
+				</ul>
+			</div>
+			<div class="responsive-header">
+				<div class="responsive-flex flex">
+					<a href="index.html"><img class="icon-responsive" src="img/icon.png"></a>
+					<div class="space"></div>
+					<div class="responsive-menu">
+						<img src="img/menu.png" class="manu-responsive">
+						<ul class="main-menu-responsive">
+							<li class="has-children">Rešenja
+								<ul>
+									<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+									<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+									<li><a href="automatizacija.html">Automatizacija</a></li>
+									<li><a href="nicelabel.html">NiceLabel softver</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Oprema
+								<ul>
+									<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+									<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+									<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+									<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+									<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+									<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+									<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+									<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Usluge
+								<ul>
+									<li><a href="print-menadzment.html">Print menadžment</a></li>
+									<li><a href="servis-podrska.html">Servis i podrška</a></li>
+									<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+								</ul>
+							</li>
+							<li><a href="novosti.html">Novosti</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="more-options">
+			<ul>
+				<li class="pisite-nam"><span><img src="img/mail.png"></span>Pišite nam</li>
+				<li><span><img src="img/language.png"></span>English</li>
+			</ul>
+		</div>
+		<div class="write-us">
+			<img src="img/exit.png" class="exit">
+			<form method="post" action="contact.php" class="contactUs" id="contactUs">
+				<p class="fot">
+					<label for="name" class="label">Ime :</label>
+					<input type="text" name="name" placeholder="Ime..." class="input">
+				</p>
+				<p>
+					<label for="email" class="label">Vaš e-mail :</label>
+					<input type="text" name="email" placeholder="E-mail..." class="input">
+				</p>
+				<p>
+					<label for="subject" class="label">Tema :</label>
+					<input type="text" name="subject" placeholder="Tema..." class="input">
+				</p>
+				<p>
+					<label for="comments" class="label">Poruka :</label>
+					<textarea name="comments" rows="6" placeholder="Poruka..." class="input"></textarea>
+				</p>
+				<p class="sum">
+					<img src="img/suma.png">
+					<input type="text" name="sum" placeholder="Suma..." class="input">
+				</p>
+				<p class="posalji">
+					<input name="submit" type="submit" value="Pošalji">
+				</p>
+				<p class="stranica">
+					<input type="text" name="stranica" value="servis-podrska.html" class="input">
+				</p>
+			</form>
+		</div>
+		<div class="main-image main-image-other">
+			<div class="page">
+				<img src="img/usluge/servis-podrska/servis-i-podrska.jpg">
+			</div>
+			<div class="main-image-other-header">
+				<h1>Servis i podrška</h1>
+				<div class="line"></div>
+				<p>Servisno – tehnička podrška sa kojom Vaša investicija traje duže.</p>
+			</div>
+		</div>
+		<div class="content-other">
+			<div class="function-description flex-align">
+				<div class="div-child even flex div-child-other">
+					<div class="div-child-header">
+						<h2>Profesionalna servisna podrška</h2>
+					</div>
+					<div class="div-child-content">
+						<p>Kompanjia Zebracon doo sa svojim višegodišnjim iskustvom u servisiranju IT industrijske opreme stoji Vam na raspolaganju kako u preventivnom tako i u incidentnom održavanju Vaše opreme. Naša iskustva bazirana su na garantnom i na vangarantnom servisu termalnih štampača različitih proizvođača, PDA uređaja, linijsko matričnih štampača i mašina za kovertiranje.</p>
+						<div class="line"></div>
+						<p>U našem servisu koristimo orginalne delove ili suplemente visokog kvaliteta, a  naše stručno osoblje pobrinuće se da u što kraćem roku odgovori na Vaše zahteve.</p><br>
+						<p>Prednosti sistema u Zebracon-u:</p>
+						<ul class="inside">
+							<li>Dijagnostifikovanje kvara u toku jednog radnog dana.</li>
+							<li>Servisiranje opreme u kratkom roku.</li>
+							<li>Veliki lager rezervnih delova za sve tipove opreme.</li>
+							<li>Garancija na delove i izvedene usluge.</li>
+							<li>Preko 15 godina servisnog iskustva.</li>
+						</ul>
+					</div>
+					<img src="img/usluge/servis-podrska/slika1.jpg">
+				</div>
+				<div class="div-child odd flex div-child-except">
+					<div class="div-child-content">
+						<img src="img/usluge/servis-podrska/podrska.png">
+						<h3>Redovno održavanje opreme</h3>
+						<p class="lastP">Određena oprema, kao i Vaš automobil, zahteva redovno i preventivno održavanje. Zavisno od tipa opreme i repromaterijala koji se koriste, dinamike rada, zahtevnosti uslova i drugih karakterističnih parametara prelažemo optimalni interval u kome je preporučeno izvesti servisnu intervenciju.</p><br>
+						<p>Redovno održavanje podrazumeva osnovne servisne radnje: pregled, testiranje, kalibrisanje, čišćenje, setovanje radnih parametara i sl. Na taj način preventivno se deluje i predupređuje potencijali zastoj i na vreme se vrši dijagnoza stanja uređaja. Sve servisne radnje na svakom posebnom uređaju čuvaju se u servisnom kartonu.</p>
+						<img src="img/usluge/servis-podrska/ugovor.png">
+						<h3>SLA (Service Level Agreement) ugovori</h3>
+						<p class="lastP">SLA je ugovor o nivou pružanja podrške za uslugu i predstavlja način da se precizno i detaljno definišu sve tačke saradnje između Zebracon-a i naručioca usluge.</p><br>
+						<p class="lastP">SLA ugovore koncipiramo tako da što bolje ispratimo i podržimo naše klijente, pa obzirom na servisno – tehnički tim koji imamo u svojoj kompaniji u mogućnosti smo da imamo fleksibilan pristup svim bitnim aspektima saradnje:</p>
+						<ul class="inside">
+							<li>podrška telefonom ili online – daljinski</li>
+							<li>ticketing sistem prijave kvara i potvrde o prijemu</li>
+							<li>vreme izlaska servisera / programera na lokaciju korisnika</li>
+							<li>prioritetni izlasci na teren na teritoriji cele zemlje</li>
+							<li>vreme između dva uzastopna zastoja sistema</li>
+							<li>vreme potrebno za popravku sistema</li>
+							<li>vreme potrebno za njegovo vraćanje u produkciju</li>
+							<li>upgrade sistema i ažuriranje softvera</li>
+							<li>mogućnost obezbeđenja back-up opreme</li>
+						</ul><br>
+						<p class="lastP">Svi ovi unapred definisani parametri saradnje mogu se dopuniti sa specifičnim zahtevima i prilaogiti se klijentu tako da isti može biti siguran i osiguran da će nivo pružanja podrške za uslugu koja im je isporučena biti u skladu s njihovim realnim potrebama.</p>
+					</div>
+					<div class="div-child-header without-background">
+						<h2>Načini servisiranja</h2>
+						<img src="img/usluge/servis-podrska/servis.png">
+					</div>
+				</div>
+				<div class="div-child even flex div-child-other">
+					<div class="div-child-header without-background">
+						<h2>Šta servisiramo</h2>
+					</div>
+					<div class="div-child-content">
+						<p class="ul-p">Barkod štampače:</p>
+						<ul class="inside">
+							<li>Zebra, Printronix, SATO, Citizen, Intermec, Datamax, Toshiba, TSC, Boca...</li>
+							<li>Servis print mehanizama, servo motora, senzora, valjaka, guide-ova, matičnih ploča, napajanja itd...</li>
+						</ul><br>
+						<p class="ul-p">Ručne terminale:</p>
+						<ul class="inside">
+							<li>Zebra/Motorola, Intermec, Datalogic, Unitech, Opticon...</li>
+							<li>Servis touchsreen-ova, displeja, tastatura, zaštitinih guma, gun-ova, ploča itd...</li>
+						</ul><br>
+						<p class="ul-p">Inkjet štampače nalepnica:</p>
+						<ul class="inside">
+							<li>Epson, Afinia, Vortex, Primera, Memjet print sistemi...</li>
+							<li>Servis print mehanizama, pumpi, ink sistema, katera, unwinder-a, čistača itd...</li>
+						</ul><br>
+						<p class="ul-p">Linijsko-matrične štampače:</p>
+						<ul class="inside">
+							<li>Printronix, Tally Genicom, IBM...</li>
+							<li>Servis shuttle-ova, napajanja, matične ploče, ironer-a, ribon maske, čekići itd...</li>
+						</ul><br>
+						<p class="ul-p">Mašine za kovertiranje:</p>
+						<ul class="inside">
+							<li>Hefter, Pitney Bowes, Neopost, Secap, Francotyp, Formax, Welltec...</li>
+							<li>Servis valjaka za uvlačenje, fingera za insertovanje, valjaka za foldovanje, četkica, sistema za vlaženje itd...</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="function-description function-description-footer function-description-footer-servis-podrska">
+				<a href="barkod-stampaci.html"><img class="pecat-footer" src="img/usluge/servis-podrska/barkod-stampaci-pecat.png"></a>
+				<a href="linijsko-matricni-stampaci.html"><img class="pecat-footer" src="img/usluge/servis-podrska/matricni-stampaci-pecat.png"></a>
+				<a href="masine-za-kovertiranje.html"><img class="pecat-footer" src="img/usluge/servis-podrska/kovertirke-pecat.png"></a>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-information">
+				<div class="footer-information-width flex">
+					<div>
+						<h6>Informatizacija</h6>
+						<span></span>
+						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
+						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
+					</div>
+					<div>
+						<h6>Automatizacija</h6>
+						<span></span>
+						<a href="automatizacija.html">Automatsko deklarisanje</a>
+						<a href="nicelabel.html">NiceLabel rešenje</a>
+						<a href="print-menadzment.html">Print menadžment</a>
+					</div>
+					<div>
+						<h6>Oprema</h6>
+						<span></span>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+					</div>
+					<div>
+						<h6>Auto-ID</h6>
+						<span></span>
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+					</div>
+					<div>
+						<h6>Kontakt</h6>
+						<span></span>
+						<p>Bulevar Arsenija Čarnojevića 166</p>
+						<p>11070 Novi Beograd</p>
+						<p>T: +381 (0)11 40 44 900</p>
+						<p>E: info@zebracon.rs</p>
+					</div>
+				</div>
+			</div>
+			<div class="background"></div>
+			<div class="footer-copyright">
+				<p>Copyright © <script>document.write(new Date().getFullYear())</script>, Zebracon d.o.o.</p>
+			</div>
+		</footer>
+		<a id="button" class="animate"></a>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+   			<div class="loader-section section-right"></div>
+		</div>
+	</body>
+</html>

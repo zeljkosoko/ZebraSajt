@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--specify the character-->
+		<meta charset="UTF-8">
+		<!--include responsive mode-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--description-->
+		<meta name="description" content="Profesionalan način za izradu standardizovanih nalepnica!">
+		<!--tittle-->
+		<title>NiceLabel proizvodi!</title>
+		<!--include Raleway font from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<!--include jQuery and Bootstrap-->
+		<script type="text/javascript" src="js/jquery-v3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		<!--include CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!--include jQuery Validation Plugin-->
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<!--icon-->
+		<link rel="icon" type="image/png" href="img/index.png">
+	</head>
+	<body>
+		<header>
+			<div class="header-background flex">
+				<a href="index.html"><img src="img/logo-header.png" class="logo"></a>
+				<div class="space"></div>
+				<ul class="flex">
+					<li class="selected-page regular-mode">Rešenja
+						<ul>
+							<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+							<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+							<li><a href="automatizacija.html">Automatizacija</a></li>
+							<li><a class="selected-option" href="nicelabel.html">NiceLabel softver</a></li>
+						</ul>
+					</li>
+					<li class="regular-mode">Oprema
+						<ul>
+							<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+							<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+							<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+							<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+							<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+							<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+							<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+							<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+						</ul>
+					</li>
+					<li class="regular-mode">Usluge
+						<ul>
+							<li><a href="print-menadzment.html">Print menadžment</a></li>
+							<li><a href="servis-podrska.html">Servis i podrška</a></li>
+							<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+						</ul>
+					</li>
+					<li><a href="novosti.html">Novosti</a></li>
+					<li><a href="kontakt.php">Kontakt</a></li>
+				</ul>
+			</div>
+			<div class="responsive-header">
+				<div class="responsive-flex flex">
+					<a href="index.html"><img class="icon-responsive" src="img/icon.png"></a>
+					<div class="space"></div>
+					<div class="responsive-menu">
+						<img src="img/menu.png" class="manu-responsive">
+						<ul class="main-menu-responsive">
+							<li class="has-children">Rešenja
+								<ul>
+									<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+									<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+									<li><a href="automatizacija.html">Automatizacija</a></li>
+									<li><a href="nicelabel.html">NiceLabel softver</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Oprema
+								<ul>
+									<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+									<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+									<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+									<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+									<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+									<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+									<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+									<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Usluge
+								<ul>
+									<li><a href="print-menadzment.html">Print menadžment</a></li>
+									<li><a href="servis-podrska.html">Servis i podrška</a></li>
+									<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+								</ul>
+							</li>
+							<li><a href="novosti.html">Novosti</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="more-options">
+			<ul>
+				<li class="pisite-nam"><span><img src="img/mail.png"></span>Pišite nam</li>
+				<li><span><img src="img/language.png"></span>English</li>
+			</ul>
+		</div>
+		<div class="write-us">
+			<img src="img/exit.png" class="exit">
+			<form method="post" action="contact.php" class="contactUs" id="contactUs">
+				<p class="fot">
+					<label for="name" class="label">Ime :</label>
+					<input type="text" name="name" placeholder="Ime..." class="input">
+				</p>
+				<p>
+					<label for="email" class="label">Vaš e-mail :</label>
+					<input type="text" name="email" placeholder="E-mail..." class="input">
+				</p>
+				<p>
+					<label for="subject" class="label">Tema :</label>
+					<input type="text" name="subject" placeholder="Tema..." class="input">
+				</p>
+				<p>
+					<label for="comments" class="label">Poruka :</label>
+					<textarea name="comments" rows="6" placeholder="Poruka..." class="input"></textarea>
+				</p>
+				<p class="sum">
+					<img src="img/suma.png">
+					<input type="text" name="sum" placeholder="Suma..." class="input">
+				</p>
+				<p class="posalji">
+					<input name="submit" type="submit" value="Pošalji">
+				</p>
+				<p class="stranica">
+					<input type="text" name="stranica" value="nicelabel-proizvodi.html" class="input">
+				</p>
+			</form>
+		</div>
+		<div class="main-image">
+			<div class="page">
+				<img src="img/resenja/nicelabel/proizvodi/proizvodi.jpg">
+			</div>
+			<div class="introduce">
+				<h1>NiceLabel proizvodi</h1>
+			</div>
+		</div>
+		<div class="content content-background-image-nicelabel">
+			<div class="third news-third">
+				<div class="grupa-novosti flex">
+					<div class="novost" onclick="window.location = 'https://www.nicelabel.com/label-management-system/?uid=00069';">
+						<img src="img/resenja/nicelabel/proizvodi/lms-enterprise.jpg">
+						<h2>NiceLabel LMS Enterprise</h2>
+						<p>Potpuno opremljen sistem za Vaš posao bilo koje veličine. Digitalni DMS (Document Management System) koji omogućava: sigurnost i skladište, osiguranje kvaliteta i sledljivost, promenljiv i transparentni sistem...</p>
+					</div>
+					<div class="novost" onclick="window.location = 'https://www.nicelabel.com/label-management-system/?uid=00069';">
+						<img src="img/resenja/nicelabel/proizvodi/lms-pro.jpg">
+						<h2>NiceLabel LMS Pro</h2>
+						<p>Osnovni sistem upravljanja nalepnicama. Digitalni DMS (Document Management System) koji omogućava: sigurnost i skladište, kao i ograničeni sistem integracije...</p>
+					</div>
+					<div class="novost" onclick="window.location = 'https://www.nicelabel.com/design-and-controlled-print/?uid=00069';">
+						<img src="img/resenja/nicelabel/proizvodi/power-forms-suite.jpg">
+						<h2>NiceLabel PowerForms Suite</h2>
+						<p>Sveobuhvatni paket NiceLabel Design softvera koji pruža korisnicima grafički dizajner etiketa i obrazaca i NiceLabel Automation za integraciju sa postojećim poslovnim sistemima...</p>
+					</div>
+					<div class="novost" onclick="window.location = 'https://www.nicelabel.com/design-and-controlled-print/?uid=00069';">
+						<img src="img/resenja/nicelabel/proizvodi/power-forms.jpg">
+						<h2>NiceLabel PowerForms</h2>
+						<p>Pojedinačka korisnička licencakoja omogućava da jedna radna stanica štampa na više štampača. Obuhvata grafički dizajner etiketa i Nicelabel Automation...</p>
+					</div>
+					<div class="novost" onclick="window.location = 'https://www.nicelabel.com/design-and-print/?uid=00069';">
+						<img src="img/resenja/nicelabel/proizvodi/designer-pro.jpg">
+						<h2>NiceLabel Designer Pro</h2>
+						<p>NiceLabel Designer Pro je potpuno opremljeno rešenje koje pruža sve alate potrebne za kreiranje, ispis i upravljanje nalepnicama u okruženjima za više korisnika...</p>
+					</div>
+					<div class="novost" onclick="window.location = 'https://www.nicelabel.com/design-and-print/?uid=00069';">
+						<img src="img/resenja/nicelabel/proizvodi/designer-express.jpg">
+						<h2>NiceLabel Designer Express</h2>
+						<p>Softver za jednostavno i pristupačno rešenje koje Vam pomaže da brzo dizajnirate etikete i stvorite efikasan proces štampanja tako da možete da se fokusirate na vođenje poslovanja umesto da brinete o greškama pri štampanju...</p>
+					</div>
+					<div class="novost" onclick="window.location = 'https://www.nicelabel.com/label-cloud/?uid=00069';">
+						<img src="img/resenja/nicelabel/proizvodi/cloud.jpg">
+						<h2>Label Cloud</h2>
+						<p>Postavite svoje rešenje za etiketiranje za nekoliko minuta i jednostavno dizajnirajte nalepnice sa bilo kog računara. Sigurno skladištite i upravljajte nalepnicama i podacima u Cloud-u...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-information">
+				<div class="footer-information-width flex">
+					<div>
+						<h6>Informatizacija</h6>
+						<span></span>
+						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
+						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
+					</div>
+					<div>
+						<h6>Automatizacija</h6>
+						<span></span>
+						<a href="automatizacija.html">Automatsko deklarisanje</a>
+						<a href="nicelabel.html">NiceLabel rešenje</a>
+						<a href="print-menadzment.html">Print menadžment</a>
+					</div>
+					<div>
+						<h6>Oprema</h6>
+						<span></span>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+					</div>
+					<div>
+						<h6>Auto-ID</h6>
+						<span></span>
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+					</div>
+					<div>
+						<h6>Kontakt</h6>
+						<span></span>
+						<p>Bulevar Arsenija Čarnojevića 166</p>
+						<p>11070 Novi Beograd</p>
+						<p>T: +381 (0)11 40 44 900</p>
+						<p>E: info@zebracon.rs</p>
+					</div>
+				</div>
+			</div>
+			<div class="background"></div>
+			<div class="footer-copyright">
+				<p>Copyright © <script>document.write(new Date().getFullYear())</script>, Zebracon d.o.o.</p>
+			</div>
+		</footer>
+		<a id="button" class="animate"></a>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+   			<div class="loader-section section-right"></div>
+		</div>
+	</body>
+</html>

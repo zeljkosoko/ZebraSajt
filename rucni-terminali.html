@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--specify the character-->
+		<meta charset="UTF-8">
+		<!--include responsive mode-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--description-->
+		<meta name="description" content="U današnje vreme gotovo da je nezamislivo da se proces automatizacije i informatizacije magacina ne zasniva na upotrebi ručnih terminala!">
+		<!--tittle-->
+		<title>Ručni terminali - mobilni računari!</title>
+		<!--include Raleway font from google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<!--include jQuery and Bootstrap-->
+		<script type="text/javascript" src="js/jquery-v3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		<!--include CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!--include jQuery Validation Plugin-->
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<!--icon-->
+		<link rel="icon" type="image/png" href="img/index.png">
+	</head>
+	<body>
+		<header>
+			<div class="header-background flex">
+				<a href="index.html"><img src="img/logo-header.png" class="logo"></a>
+				<div class="space"></div>
+				<ul class="flex">
+					<li class="regular-mode">Rešenja
+						<ul>
+							<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+							<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+							<li><a href="automatizacija.html">Automatizacija</a></li>
+							<li><a href="nicelabel.html">NiceLabel softver</a></li>
+						</ul>
+					</li>
+					<li class="selected-page regular-mode">Oprema
+						<ul>
+							<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+							<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+							<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+							<li><a class="selected-option" href="rucni-terminali.html">Ručni terminali</a></li>
+							<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+							<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+							<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+							<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+						</ul>
+					</li>
+					<li class="regular-mode">Usluge
+						<ul>
+							<li><a href="print-menadzment.html">Print menadžment</a></li>
+							<li><a href="servis-podrska.html">Servis i podrška</a></li>
+							<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+						</ul>
+					</li>
+					<li><a href="novosti.html">Novosti</a></li>
+					<li><a href="kontakt.php">Kontakt</a></li>
+				</ul>
+			</div>
+			<div class="responsive-header">
+				<div class="responsive-flex flex">
+					<a href="index.html"><img class="icon-responsive" src="img/icon.png"></a>
+					<div class="space"></div>
+					<div class="responsive-menu">
+						<img src="img/menu.png" class="manu-responsive">
+						<ul class="main-menu-responsive">
+							<li class="has-children">Rešenja
+								<ul>
+									<li><a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a></li>
+									<li><a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a></li>
+									<li><a href="automatizacija.html">Automatizacija</a></li>
+									<li><a href="nicelabel.html">NiceLabel softver</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Oprema
+								<ul>
+									<li><a href="barkod-stampaci.html">Bar-kod štampači</a></li>
+									<li><a href="tiket-stampaci.html">Tiket štampači</a></li>
+									<li><a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a></li>
+									<li><a href="rucni-terminali.html">Ručni terminali</a></li>
+									<li><a href="barkod-skeneri.html">Bar-kod skeneri</a></li>
+									<li><a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a></li>
+									<li><a href="kancelarijski-materijal.html">Kancelarijski materijal</a></li>
+									<li><a href="potrosni-materijali.html">Potrošni materijali</a></li>
+								</ul>
+							</li>
+							<li class="has-children">Usluge
+								<ul>
+									<li><a href="print-menadzment.html">Print menadžment</a></li>
+									<li><a href="servis-podrska.html">Servis i podrška</a></li>
+									<li><a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a></li>
+								</ul>
+							</li>
+							<li><a href="novosti.html">Novosti</a></li>
+							<li><a href="kontakt.php">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="more-options">
+			<ul>
+				<li class="pisite-nam"><span><img src="img/mail.png"></span>Pišite nam</li>
+				<li><span><img src="img/language.png"></span>English</li>
+			</ul>
+		</div>
+		<div class="write-us">
+			<img src="img/exit.png" class="exit">
+			<form method="post" action="contact.php" class="contactUs" id="contactUs">
+				<p class="fot">
+					<label for="name" class="label">Ime :</label>
+					<input type="text" name="name" placeholder="Ime..." class="input">
+				</p>
+				<p>
+					<label for="email" class="label">Vaš e-mail :</label>
+					<input type="text" name="email" placeholder="E-mail..." class="input">
+				</p>
+				<p>
+					<label for="subject" class="label">Tema :</label>
+					<input type="text" name="subject" placeholder="Tema..." class="input">
+				</p>
+				<p>
+					<label for="comments" class="label">Poruka :</label>
+					<textarea name="comments" rows="6" placeholder="Poruka..." class="input"></textarea>
+				</p>
+				<p class="sum">
+					<img src="img/suma.png">
+					<input type="text" name="sum" placeholder="Suma..." class="input">
+				</p>
+				<p class="posalji">
+					<input name="submit" type="submit" value="Pošalji">
+				</p>
+				<p class="stranica">
+					<input type="text" name="stranica" value="rucni-terminali.html" class="input">
+				</p>
+			</form>
+		</div>
+		<div class="main-image">
+			<div class="page">
+				<img src="img/oprema/rucni-terminali/terminali.jpg">
+			</div>
+			<div class="introduce">
+				<h1>Ručni terminali</h1>
+			</div>
+		</div>
+		<div class="content content-background-image-terminali">
+			<div class="function-description">
+				<div class="function-description-width function-description-header">
+					<div class="margin">
+						<h2>Ručni terminali - mobilni računari</h2>
+						<div class="line"></div>
+						<div class="image-flex flex">
+							<div>
+								<img src="img/oprema/rucni-terminali/tc52.png">
+								<img src="img/oprema/rucni-terminali/tc52-cb.png" class="black-white-image 1">
+								<p>Zebra TC <span>52</span> / <span>57</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/rucni-terminali/tc8300.png">
+								<img src="img/oprema/rucni-terminali/tc8300-cb.png" class="black-white-image 2">
+								<p>Zebra TC <span>8300</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/rucni-terminali/mc3300.png">
+								<img src="img/oprema/rucni-terminali/mc3300-cb.png" class="black-white-image 3">
+								<p>Zebra MC <span>3300</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/rucni-terminali/mc9300.png">
+								<img src="img/oprema/rucni-terminali/mc9300-cb.png" class="black-white-image 4">
+								<p>Zebra MC <span>9300</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="margin last-div">
+						<div class="image-flex flex">
+							<div>
+								<img src="img/oprema/rucni-terminali/wt6000.png">
+								<img src="img/oprema/rucni-terminali/wt6000-cb.png" class="black-white-image 5">
+								<p>Zebra WT <span>6000</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/rucni-terminali/vc80.png">
+								<img src="img/oprema/rucni-terminali/vc80-cb.png" class="black-white-image 6">
+								<p>Zebra VC <span>80X</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/rucni-terminali/skorpiox4.png">
+								<img src="img/oprema/rucni-terminali/skorpiox4-cb.png" class="black-white-image 7">
+								<p>Datalogic Skorpio <span>X4</span></p>
+							</div>
+							<div>
+								<img src="img/oprema/rucni-terminali/falconx4.png">
+								<img src="img/oprema/rucni-terminali/falconx4-cb.png" class="black-white-image 8">
+								<p>Datalogic Falcon <span>X4</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even">
+				<div class="function-description-width">
+					<h3>Ručni terminali - mobilni računari</h3>
+					<p class="description-header"><span>U</span> današnje vreme gotovo da je nezamislivo, da se proces automatizacije i informatizacije magacina, proizvodnja, logističkih službi ili bilo kog drugog većeg sistema ne zasniva na upotrebi ručnih terminala. <span>B</span>ilo da je u pitanju magacinsko poslovanje, otprema ili prijem robe, prodaja na terenu, popis osnovnih sredstava, prikupljanje podataka, nevezano da li se radi o komercijalnim uređajima (PDA) ili je pak reč o robusnim, industrijski krojenim računarima, oni su postali svakodnevna potreba i neophodna karika u lancu protoka informacija. <span>T</span>ako je i deo našeg proizvodnom asortimana, već duži niz godina, upotpunjen mobilnim računarima - Zebra i Datalogic.</p>
+				</div>
+			</div>
+			<div class="function-description odd 1-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra TC <span>52</span> / <span>57</span></h4>
+							<ul>
+								<li>Novi modeli kao naslednici ranije serije uređaja TC51/TC56 sa unapređenom platformom i performansama u odnosu na prethodnike.</li>
+								<li>Maksimalizacija produktivnosti bazirana na adroid platformama – TC52 (Android 9 Pie) i TC57 (Android 8.1 Oreo).</li>
+								<li>Veliki 5“ touchscreen displej koji možete jasno videti bez problema i na direktnoj sunčevoj svetlosti.</li>
+								<li>Scan engine SE4710 za 1D i 2D barkodove.</li>
+								<li>Zadnja kamera rezolucije 13MP za slike i video zapis, prednja od 5MP za video call.</li>
+								<li>Worry free WiFi – obezbeđuje nezavisnu i pouzdanu wireless komunikaciju.</li>
+								<li>PowerPrecision Console za praćenje stanja i brigu o dugotrajnosti baterija.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/tc52.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even 2-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra TC <span>8300</span></h4>
+							<ul>
+								<li>Revolucionarni enterprise model ručnog računara koji maksimalizuje radne učinke.</li>
+								<li>Specijalna ergonomija i dizaj doprinose rastu produktivnosti radnika do 14%.</li>
+								<li>Skener na ovom računaru je pozicioniran tako da za kontrolu očitanog sadržaja nema potrebe da uređaj, kao kod klasičnih modela okrećete ka sebi – vidite ga odmah u istom položaju.</li>
+								<li>Jednostavna migracija na android aplikacije – bez dodaznog kodiranja, backend modifikacija – uz Zebrinu All-touch terminal emulaciju.</li>
+								<li>Android 8.1 Oreo, moćni 8-core procesor i 4GB Ram / 8 GB Flash-a.</li>
+								<li>Scan engine u nekoliko opcija zavisno od namene i razdaljine čitanja, extended range sa izuzetnim performansama i čitanjem barkodova do 21m udaljenosti.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/tc8300.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description odd 3-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra MC <span>3300</span></h4>
+							<ul>
+								<li>Nova generacija industrijskih mobilnih računara koji dramatično podižu produktivnost i profitabilnost Vašeg biznisa.</li>
+								<li>Android platforma, uz lako migraciju windows aplikacija na novo okruženje sa gotovim emulacijama.</li>
+								<li>Četiri različite opcije kada je skeniranje u pitanju: sken sa 0°, sa 45°, konfiguracija sa gun-om ili sa rotirajućom glavom za skeniranje pruža mogućnost za sve vrste zahteva.</li>
+								<li>Touch screen je napravljen od scratch-resistant Gorilla Glass-a, 4” kolor displej, WVGA.</li>
+								<li>Push to talk, WLAN, Bluetooth, uz opcije NFC i zadnju kameru od 13 MP.</li>
+								<li>Na raspolaganju nekoliko dokazanih Zebrinih scan engina zavisno do vrste barkoda i traženih performansi očitavanja, uz moćan procesor i više nego dovoljno memorije i za najzahtevnije korisnike.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/mc3300.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even 4-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra MC <span>9300</span></h4>
+							<ul>
+								<li>Dokazana serija MC9000 sa preko 3 miliona računara koji se svakodnevno koriste širom sveta sada na Android platformi – najrobusniji i najpouzdaniji uređaj u ovoj klasi.</li>
+								<li>Neprevaziđena pouzdanost kada je skeniranje u pitanju, bez obzira da skenirate iz neposredne blizine ili do 21m udaljenosti, nepogrešivo čitanje diretno markiranih materijala.</li>
+								<li>Zebra Mobility DNA – mnoštvo korisnih alata za komunikaciju, sigurnost i upravljivost uređaja.</li>
+								<li>Najbolje performanse baterije u klasi – Li-Ion 7000 mAh, brzo punjenje i praćenje statusa baterije, hot swap – brza zamena za rad bez zastoja.</li>
+								<li>4.3“ WVGA (800 x 480), kolor displej, Gorilla Glass, led pozadinsko osvetljenje.</li>
+								<li>Senzor pokreta i senzor za ambijentalno prilagođavanje osvetljenja displeja.</li>
+								<li>Na raspolaganju sledeći scan engine: SE4850 extended range očitavanje na do 21m udaljenosti, SE4770 i SE4750 sa standard range-om, SE4750 za očitavanje direktno markiranih materijala i 1D SE965 engine sa adaptive scanning tehnologijom.</li>
+								<li>Jednostavno model za sva okruženja i zahteve ma koliko oni specifični bili.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/mc9300.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description odd 5-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra WT <span>6000</span></h4>
+							<ul>
+								<li>Industrijski nosivi mobilni računar – sa ergonomskim dizajnom lako se adaptirati na svaku ruku operatera tačnije iznad ručnog zgloba.</li>
+								<li>Glavna prednost jeste komfor u radu operatera zbog slobodnih ruku, pa samim tim i maksimalni efekti njegovog rada.</li>
+								<li>27% lakši i 36% manjih gabarita od svog prethodnika, ali sa dovoljno velikim – 3.2“ displejem uz 3 programabilna softkey-a omogućava veliku fleksibilnost u radu.</li>
+								<li>Integrisani NFC za momentalno uparivanje sa ring skenerom, slušalicama ili štampačem.</li>
+								<li>Voice i audio funkcionalnosti, push to talk i speech directed picking.</li>
+								<li>Opciono uređaj može biti i sa tastatutom sa strane.</li>
+								<li>Mogućnost uparivanja ovog terminala sa nekim od Zebrinih ring skenera (RS6000, RS5100, RS5000 ili RS4000) ili industrijskih slušalica (HS3100 ili HS2100) podiže produktivnost operatera i do čak 15%.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/wt6000.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even 6-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Zebra VC <span>80X</span></h4>
+							<ul>
+								<li>Industrijski terminal koji se namenjen montiranju na bilo koji viljuškar, paletar ili slično vozilo u skopu magacina, proizvodnje ili bilo kom drugom ekstremno zahtevnom okruženju.</li>
+								<li>Freez ready uređaj koji je namenjen i za rad u hladnjačama, sa senzorima za kontrolu temperature okruženja odnosno regulaciju grejanja baterije i ploče kako bi performanse uređaja bile netaknute.</li>
+								<li>Robustan uređaj za svim dodacima za brzo i efikasno moniranje oprema na vozilo.</li>
+								<li>Android platforma sa programabilnim dugmićima za rad u kompleksnim okruženjima, opciono dodavanje eksterne tastature.</li>
+								<li>Zavisno od potreba veliki broj modularnosti i konektovanja na eksterne uređaje bilo da je reč o skeneru, slušalicama ili štampačima preko RS232, USB portova, audio džeka, ethernet-a ili pak Bluetooth i WiFi konekcije.</li>
+								<li>10.4“ kolor XGA (1024 x 768) LCD, izbor 400 ili 1,000 NITs; LED pozadinsko osvetljenje.</li>
+								<li>Interno napajanje postavljeno u samom uređaju priključuje se na viljuškar.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/vc80.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description odd 7-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Datalogic Skorpio <span>X4</span></h4>
+							<ul>
+								<li>Visoke performanske i brzina rada zasnovana na multi-core 1Ghz arhitekturi.</li>
+								<li>Windows Embededded Compact 7 koji daje mogućnost jednostavnog prelaska na Android verziju uređaja.</li>
+								<li>1GB RAM-a i 8GB Flash-a zadovoljiće i one zahtevnije korisnike.</li>
+								<li>Najveći kolor displej touch screen od 3.2 inča u ovoj klasi uređaja na trištu.</li>
+								<li>Opcije izbora između 1D i 2D imager-a kada je skeniranje u pitanju.</li>
+								<li>Datalogic „Green spot“ tehnologija čitanja za pouzdano očitavanje barkodova.</li>
+								<li>Namenjen uglavnom za komercijalne aktivnosti, prikladne ergonomije za laku operabilnost.</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/skorpiox4.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="function-description even 8-1">
+				<div class="function-description-width">
+					<div class="width-flex flex">
+						<div class="both first-div">
+							<h4>Datalogic Falcon <span>X4</span></h4>
+							<ul>
+								<li>Nova generacija najprodavanijeg modela iz ranga Falcon, ekstremno robustan i pouzdan uređaj.</li>
+								<li>Izbor između 1D i 2D imager-a sa „Green spot“ tehnologijom skeniranja.</li>
+								<li>Opciono extra long 2D imager, auto range funkcija očitavanja do 15.0 m.</li>
+								<li>Hot swappable baterija za rad bez prekida i zastoja.</li>
+								<li>3.5 inča kolor toucgscreen displej.</li>
+								<li>Izbor između Windows embedded compact 7 i Andorid platforme 4.4.</li>
+								<li>Bluetooth v4 omogućava low energy mode (BLE).</li>
+							</ul>
+						</div>
+						<div class="space"></div>
+						<div class="border"></div>
+						<div class="both second-div">
+							<img src="img/oprema/rucni-terminali/falconx4.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-information">
+				<div class="footer-information-width flex">
+					<div>
+						<h6>Informatizacija</h6>
+						<span></span>
+						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
+						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
+					</div>
+					<div>
+						<h6>Automatizacija</h6>
+						<span></span>
+						<a href="automatizacija.html">Automatsko deklarisanje</a>
+						<a href="nicelabel.html">NiceLabel rešenje</a>
+						<a href="print-menadzment.html">Print menadžment</a>
+					</div>
+					<div>
+						<h6>Oprema</h6>
+						<span></span>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+					</div>
+					<div>
+						<h6>Auto-ID</h6>
+						<span></span>
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+					</div>
+					<div>
+						<h6>Kontakt</h6>
+						<span></span>
+						<p>Bulevar Arsenija Čarnojevića 166</p>
+						<p>11070 Novi Beograd</p>
+						<p>T: +381 (0)11 40 44 900</p>
+						<p>E: info@zebracon.rs</p>
+					</div>
+				</div>
+			</div>
+			<div class="background"></div>
+			<div class="footer-copyright">
+				<p>Copyright © <script>document.write(new Date().getFullYear())</script>, Zebracon d.o.o.</p>
+			</div>
+		</footer>
+		<a id="button" class="animate"></a>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+   			<div class="loader-section section-right"></div>
+		</div>
+	</body>
+</html>
