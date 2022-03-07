@@ -1911,54 +1911,148 @@
   .responsiveLogo{
       display: none;
   }
+
+ .topnav{
+  display: none;
+ }
+
   /* ---------- end footer ---------- */
   
   /* -------------------- end body -------------------- */
- @media screen and (max-width:350px){
-     .logo{
-        display: none;
-     }
-     .responsiveLogo{
-         display: block;
-         width: 50px;
-         margin: 10px 10px;
-     }
-     .header-background {
-       ul.flex{
-        display: none;
-       }
-     }
-     .carousel-inner {
-       width: 90%;
-       .item, .item-active{
-        margin-left: -65px;
-       }
-     }
-     .slider-image .custom-carousel .overlay{
-       width: 100%;
-     }
-     .slider-image .custom-carousel .carousel-caption {
-       width: 100%;
-     }
-     .content{
-      .first{
-        padding: 80px 0 30px 0;
-        p{
-          display: none;
-        }
-        p.zebraInfo{
-          display: block;
-          font-size: 1em;
-          text-align: justify;
-          padding: 0 20px;
-        }
-       }
-      .second{
-        padding: 50px 0;
-        .box{
-          margin: 50px 0;
+ @media screen and (max-width:400px){
+
+    header {
+          width: 390px;
+          .header-background.flex {
+            display: none;
+          }
+
+          .topnav {
+            display: block;
+            a{
+              display: none;
+            }
+            .logoLink{
+              display: block;
+              width: 60px;
+              height: 60px;
+              top: 10px;
+              left: 10px;
+              position: relative;
+              .responsiveLogo{
+                position: absolute;
+                display: block;
+                width: 50px;
+                }
+              }
+            .dropdown .dropbtn {
+              display: none;
+            }
+            a.icon {
+              display: block;
+              position: absolute;
+              font-size: 40px;
+              top: 0;
+              right: 10px;
+            }
+
+          } //topnav end
+
+          .topnav.responsive {
+            position: relative;
+            background-color: #333;
+            .logoLink{
+              display: block;
+              width: 60px;
+              height: 60px;
+              position: relative;
+              top: 10px;
+              left:10px;
+              padding: 0px 0px;
+              .responsiveLogo{
+                position: absolute;
+                display: block;
+                width: 50px;
+                }
+            }
+            a.icon {
+              display: block;
+              position: absolute;
+              font-size: 40px;
+              color: #23527c;
+              padding: 0px 0px;
+            }
+            a {
+              float: none;
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            .dropdown {
+              float: none;
+              div[class*="dropdown-content"] {
+                position: relative;
+                display: none;
+                min-width: 160px;
+                //border: 1px 1px 1px 1px #323232;
+                box-shadow: 2px 8px 16px 2px rgba(233, 226, 226, 0.2);
+                z-index: 1;
+              }
+              .dropbtn {
+                display: block;
+                width: 100%;
+                float: none;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 17px;
+                background-color: #333;
+                border: 0.7px;
+                box-shadow: 2px 8px 16px 2px rgba(233, 226, 226, 0.2);
+              }
+            }
+
+          } //topnav responsive end
+
+        }//header end
+    
+    .slider-image {
+      .carousel-inner {
+        width: 95%;
+        .item, .item-active{
+          margin-left: -65px;
         }
       }
-     } 
+    }
+    .slider-image .custom-carousel .overlay{
+      width: 100%;
+    }
+    .slider-image .custom-carousel .carousel-caption {
+      width: 100%;
+    }
+    .content{
+     .first{
+       padding: 80px 0 30px 0;
+       p{
+         display: none;
+       }
+       p.zebraInfo{
+         display: block;
+         font-size: 1em;
+         text-align: justify;
+         padding: 0 20px;
+       }
+      }
+     .second{
+        padding: 38px 0 0 0;
+       .box{
+         margin: 50px 0;
+       }
+     }
+    } 
+} //media screen end
+ 
 
- }
