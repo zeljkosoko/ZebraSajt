@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction(){
     if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
-        document.getElementById("button").classList.add('show')
+        document.getElementById("button").classList.add('show');
     }
     else{
         document.getElementById("button").classList.remove('show');

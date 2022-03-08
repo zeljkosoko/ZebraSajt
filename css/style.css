@@ -2064,16 +2064,24 @@ footer .footer-copyright p {
             box-shadow: 2px 8px 16px 2px rgba(233, 226, 226, 0.2);
   }
   .slider-image .carousel-inner {
-    width: 95%;
+    width: 100%;
   }
-  .slider-image .carousel-inner .item, .slider-image .carousel-inner .item-active {
-    margin-left: -65px;
+  .slider-image .carousel-inner .item .overlay.animated.fadeInDownBig, .slider-image .carousel-inner .item-active .overlay.animated.fadeInDownBig {
+    margin-left: -78px;
+  }
+  .slider-image .carousel-inner .item .carousel-caption, .slider-image .carousel-inner .item-active .carousel-caption {
+    padding: 0px 30px;
+    top: 200px;
+    left: 5px;
   }
   .slider-image .custom-carousel .overlay {
     width: 100%;
   }
   .slider-image .custom-carousel .carousel-caption {
     width: 100%;
+  }
+  .content {
+    background-image: none;
   }
   .content .first {
     padding: 80px 0 30px 0;
@@ -2088,10 +2096,63 @@ footer .footer-copyright p {
     padding: 0 20px;
   }
   .content .second {
-    padding: 38px 0 0 0;
+    display: none;
   }
-  .content .second .box {
-    margin: 50px 0;
+  .content .third {
+    padding-top: 44px;
+  }
+  .content .third .grupa-novosti .no-resp {
+    display: none;
+  }
+  .content .third .grupa-novosti .novost {
+    width: 340px;
+    margin-bottom: 44px;
+  }
+  .content .third .grupa-novosti .novost img {
+    width: 340px;
+  }
+  .content .third .grupa-novosti .novost h2 {
+    padding-bottom: 20px;
+  }
+  .content .third .grupa-novosti .novost p {
+    padding-bottom: 25px;
+  }
+  .content .partners {
+    display: none;
+  }
+  .content .partners2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 44px 0;
+  }
+  .content .partners2 div {
+    float: left;
+    text-align: center;
+  }
+  .content .partners2 div a img {
+    width: 150px;
+  }
+  footer .footer-information .footer-information-width .no-resp {
+    display: none;
+  }
+  footer .footer-information .footer-information-width div a, footer .footer-information .footer-information-width div p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  footer .footer-information .footer-information-width div span {
+    display: none;
+  }
+  footer .footer-copyright p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .more-options {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
