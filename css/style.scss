@@ -1915,7 +1915,9 @@
  .topnav{
   display: none;
  }
-
+ .just-responsive {
+  display: none;
+ }
   /* ---------- end footer ---------- */
   
   /* -------------------- end body -------------------- */
@@ -2019,6 +2021,10 @@
 
         }//header end
     
+    .no-resp{
+      display: none;
+    }
+        
     .slider-image {
       .carousel-inner {
         width: 100%;
@@ -2060,9 +2066,6 @@
      .third {
        padding-top: 44px;
        .grupa-novosti {
-         .no-resp{
-           display: none;
-         }
         .novost {
           width: 340px;
           margin-bottom: 44px;
@@ -2097,13 +2100,11 @@
        }
      }
     }
-    
+
     footer {
       .footer-information {
         .footer-information-width {
-          .no-resp{
-            display: none;
-          }
+         
          
           div {
   
@@ -2127,6 +2128,86 @@
     .more-options {
       display: none;
     }
+  .main-image.main-image-other{
+    .page {
+      width: 100%;
+    }
+    .main-image-other-header {
+      background-color: rgba(255, 255, 255, 0.77);
+      box-shadow: 0 0 20px #262626;
+      top: 230px;
+      padding: 0px 30px;
+      left: 0%;
+      text-align: center;
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  .content-other {
+    padding-top: 0%;
+    margin-top: 102px;
+    .function-description.flex-align{
+
+      .div-child.even.flex.div-child-other{
+        .div-child-header {
+          h2{
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+      .div-child.odd.flex.div-child-except{
+        flex-direction: column;
+        width: 75%;
+
+        .div-child-content{
+          img {
+            width: 40px;
+          }
+          padding: 25px 25px;
+          h3{
+            margin-top: -33px;
+            margin-left: 55px;
+            margin-bottom: 0px;
+            font-size: 18px;
+          }
+          .just-responsive {
+            display: block;
+            text-align: center;
+          }
+          .lastP {
+            margin-top: 30px;
+          }
+        }
+ 
+      }
+      .div-child.even.flex.div-child-other{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: -104px;
+        margin-bottom: 110px;
+        .div-child-header.without-background{
+          
+          .just-responsive {
+            display: block;
+            width: 70%;
+            margin-top: 35px;
+          }
+        }
+        .div-child-content2 {
+          display: block;
+          width: 70%;
+          margin-top: 30px;
+          transform: rotate(-1deg);
+          ul {
+            list-style-image: url(../img/check.png);
+          }
+        }
+      }
+    }
+  
+  }
 } //media screen end
  
 
