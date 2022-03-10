@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -145,21 +197,22 @@
 			</div>
 			<div class="main-image-other-header">
 				<h1>NiceLabel softver</h1>
-				<div class="line"></div>
+				<div class="line no-resp"></div>
 				<p>Softver za dizajn bar-kod nalepnica i upravljanje produktivnosti štampe.</p>
 			</div>
 		</div>
 		<div class="content-other">
-			<div class="izdvojeno-pecati-relative">
+			<div class="izdvojeno-pecati-relative no-resp">
 				<a href="https://www.nicelabel.com/buy-online/?uid=00069"><img class="pecat-footer izdvojeni-pecati-1" src="img/resenja/nicelabel/kupite.png"></a>
 				<a href="nicelabel-proizvodi.html"><img class="pecat-footer izdvojeni-pecati-2" src="img/resenja/nicelabel/proizvodi-img.png"></a>
 			</div>
 			<div class="function-description flex-align">
 				<div class="div-child even flex div-child-other">
 					<div class="div-child-header">
-						<h2>Softver za dizajn bar-kod nalepnica</h2>
+						<h2 class="no-resp">Softver za dizajn bar-kod nalepnica</h2>
+						<h3>Nova generacija sistema za upravljanje označavanjem (LMS)</h3>
 					</div>
-					<div class="div-child-content">
+					<div class="div-child-content no-resp">
 						<p>NiceLabel je vodeći svetski proizvođač softvera za dizajn nalepnica i sistema za upravljanje štampom, koji pomaže kompanijama da poboljšaju kvalitet, brzinu i efikasnost označavanja, uz smanjenje troškova.</p>
 						<div class="line"></div>
 						<p>NiceLabel sistem za upravljanje procesima štampe omogućava kompanijama da digitalno transformišu celokupan proces označavanja nalepnicama, od dizajna, do štampanja, do upravljanja procesom štampe. Rezultat je pouzdana i brža operacija, koja omogućava kompanijama da brže reaguju na promene uslova i zahteva tržišta, brže plasiraju proizvode na tržište i budu konkurentni u sektorima u kojima posluju.</p><br>
@@ -178,38 +231,39 @@
 				<div class="div-child odd flex div-child-except">
 					<div class="div-child-content">
 						<img src="img/resenja/nicelabel/lms.png">
-						<h3>Nova generacija sistema za upravljanje označavanjem (LMS)</h3>
-						<p class="lastP">NiceLabel LMS je nova generacija “all-inclusive”, sveobuhvatnog sistema za upravljanje označavanjem, za kompanije koje upravljaju sistemom menadžmenta kvaliteta kao i za regulisana preduzeća. NiceLabel LMS sadrži sve što je potrebno za standardizaciju, centralizaciju i kontrolu označavanja.</p><br>
+						<h3 class="no-resp">Nova generacija sistema za upravljanje označavanjem (LMS)</h3>
+						<h3>NiceLabel LMS</h3>
+						<p class="lastP no-resp">NiceLabel LMS je nova generacija “all-inclusive”, sveobuhvatnog sistema za upravljanje označavanjem, za kompanije koje upravljaju sistemom menadžmenta kvaliteta kao i za regulisana preduzeća. NiceLabel LMS sadrži sve što je potrebno za standardizaciju, centralizaciju i kontrolu označavanja.</p><br>
 						<p class="lastP">NiceLabel LMS uključuje dizajner nalepnica, application builder, sistem za upravljanje dokumentima, sistem za štampu sa web-a, integrisani sistem štampe, “non-production” okruženje, i sistem za izmenu i transport. Sistem je skalabilan i omogućuje rad od pet korisnika do više hiljada korisnika, i može se proširiti na udaljene lokacije, dobavljače ili podugovarače.</p><br>
-						<p class="lastP">Opcije pristupa/postavljanja:</p>
+						<p class="lastP no-resp">Opcije pristupa/postavljanja:</p>
 						<ul class="inside">
 							<li>Label Cloud je public cloud izdanje NiceLabel sistema za upravljanje označavanjem. Višekorisnički cloud je hostovan na Microsoft Azure cloud-u. “Out-of-the-box” usluga ne zahteva IT infrastrukturu, instalaciju ili IT podršku.</li>
 							<li>LMS Enterprise je “on-premises” izdanje NiceLabel sistema za upravljanje označavanjem, koji je hostovan na vašoj sopstvenoj IT infrastrukturi.</li>
 						</ul>
-						<p></p>
-						<img src="img/resenja/nicelabel/design.png">
-						<h3>Započnite i završite sa dizajnom etiketa već danas</h3>
-						<p>NiceLabel dizajner pruža poznato korisničko radno okruženje, nalik Microsoft Word-u. To znači da svako može brzo da dizajnira profesionalne nalepnice bez prethodnog znanja o barkodingu ili obuci za dizajn.</p>
-						<img src="img/resenja/nicelabel/printing.png">
-						<h3>Štampajte tačno i postojano bez grešaka u štampanju</h3>
-						<p>Štampanje nalepnica sa dinamičkim podacima se razlikuje od štampanja drugih vrsta dokumenata. Sistem označavanja treba da omogući zaposlenima u proizvodnji i skladištu da brzo i bez grešaka štampaju nalepnice. NiceLabel dolazi sa “all-in-one” formom za štampu koja pomaže korisnicima da štampaju tačne nalepnice bez rizika od greške.</p>
-						<img src="img/resenja/nicelabel/marking.png">
-						<h3>Pojednostavite proces označavanja i poboljšajte produktivnost štampanja</h3>
-						<p class="lastP">Pravi trošak označavanja je trošak povezan sa greškama u štampanju, pogrešnom označavanju, pa čak i povlačenjem proizvoda ili kaznama. Ostali troškovi koje bi takođe trebalo uzeti u obzir su troškovi radne snage i obuke. Najbolja praksa da se navedeni troškovi minimiziraju je integracija i automatizacija procesa štampe nalepnica sa postojećim poslovnim aplikacijama korisnika ili, u slučaju da se štampanje vrši ručno, prilagođavanje interfejsa za štampanje prema potrebama korisnika i procesa.</p>
+						<p class="no-resp"></p>
+						<img class="no-resp" src="img/resenja/nicelabel/design.png">
+						<h3 class="no-resp">Započnite i završite sa dizajnom etiketa već danas</h3>
+						<p class="no-resp">NiceLabel dizajner pruža poznato korisničko radno okruženje, nalik Microsoft Word-u. To znači da svako može brzo da dizajnira profesionalne nalepnice bez prethodnog znanja o barkodingu ili obuci za dizajn.</p>
+						<img class="no-resp" src="img/resenja/nicelabel/printing.png">
+						<h3 class="no-resp">Štampajte tačno i postojano bez grešaka u štampanju</h3>
+						<p class="no-resp">Štampanje nalepnica sa dinamičkim podacima se razlikuje od štampanja drugih vrsta dokumenata. Sistem označavanja treba da omogući zaposlenima u proizvodnji i skladištu da brzo i bez grešaka štampaju nalepnice. NiceLabel dolazi sa “all-in-one” formom za štampu koja pomaže korisnicima da štampaju tačne nalepnice bez rizika od greške.</p>
+						<img class="no-resp" src="img/resenja/nicelabel/marking.png">
+						<h3 class="no-resp">Pojednostavite proces označavanja i poboljšajte produktivnost štampanja</h3>
+						<p class="lastP no-resp">Pravi trošak označavanja je trošak povezan sa greškama u štampanju, pogrešnom označavanju, pa čak i povlačenjem proizvoda ili kaznama. Ostali troškovi koje bi takođe trebalo uzeti u obzir su troškovi radne snage i obuke. Najbolja praksa da se navedeni troškovi minimiziraju je integracija i automatizacija procesa štampe nalepnica sa postojećim poslovnim aplikacijama korisnika ili, u slučaju da se štampanje vrši ručno, prilagođavanje interfejsa za štampanje prema potrebama korisnika i procesa.</p>
 					</div>
-					<div class="div-child-header without-background">
+					<div class="div-child-header without-background no-resp">
 						<h2>Upravljajte celokupnim procesima</h2>
 						<img src="img/resenja/nicelabel/nicelabel-lms.png">
 					</div>
 				</div>
 				<div class="div-child even flex div-child-other">
-					<div class="div-child-header without-background">
+					<div class="div-child-header without-background no-resp">
 						<h2>Pronađite rešenje koje najbolje odgovara vašim potrebama</h2>
 					</div>
-					<div class="div-child-content">
-						<p>Niste sigurni koje rešenje Vam je potrebno?</p>
-						<div class="line"></div>
-						<p>Odvojite malo vremena i odgovorite na sedam pitanja o vašim zahtevima za označavanje i preporučićemo Vam proizvod koji najbolje odgovara vašim potrebama i radnom okruženju.</p>
+					<div class="div-child-content no-resp">
+						<p >Niste sigurni koje rešenje Vam je potrebno?</p>
+						<div class="line "></div>
+						<p >Odvojite malo vremena i odgovorite na sedam pitanja o vašim zahtevima za označavanje i preporučićemo Vam proizvod koji najbolje odgovara vašim potrebama i radnom okruženju.</p>
 						<a href="https://www.nicelabel.com/product-selector/?uid=00069" class="resenje">Pronađite najbolje rešenje za Vas</a>
 					</div>
 				</div>
@@ -221,27 +275,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -270,4 +324,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>
