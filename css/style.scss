@@ -2159,7 +2159,7 @@
       }
       .div-child.odd.flex.div-child-except{
         flex-direction: column;
-        width: 75%;
+        width: 293px;
 
         .div-child-content{
           img {
@@ -2169,7 +2169,7 @@
           h3{
             margin-top: -33px;
             margin-left: 55px;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
             font-size: 18px;
           }
           .just-responsive {
@@ -2198,7 +2198,8 @@
         .div-child-content2 {
           display: block;
           width: 70%;
-          margin-top: 30px;
+          margin:30px 0;
+          padding-bottom: 55px;
           transform: rotate(-1deg);
           ul {
             list-style-image: url(../img/check.png);
@@ -2214,7 +2215,7 @@
     .function-description.flex-align {
       margin-bottom: -155px;
       .div-child.odd.flex.div-child-except {
-        width: 70%;
+        width: 75%;
         .div-child-content {
           .lastP {
             margin-top: 0px;
@@ -2251,7 +2252,61 @@
         }
       }
     }
-  }  
+  }
+
+  /*barkod stampaci*/
+  .main-image {
+    .introduce {
+      h1{
+        font-size: 33px;
+      }
+    }  
+  }
+
+  .content.content-background-image-barkod-stampaci {
+    .function-description {
+      .function-description-width.function-description-header {
+        margin: 0px;
+        .margin, .margin.last-div {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            padding-bottom: 20px;
+            margin-bottom: 0px;
+          }
+          .image-flex.flex {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            div {
+              margin: 0px;
+              padding: 10px 10px;
+            }
+          }
+        }
+
+      }
+    }
+    .printer1,.printer2,.printer3,.printer4,.printer5,.printer6,.printer7,.printer8{
+      padding-bottom: 40px;
+      .function-description-width {
+        .width-flex.flex {
+          .both.first-div{
+            margin: 0 30px 0 40px;
+            ul {
+              margin-bottom: 0;
+              li {
+                padding: 0;
+              }
+            }
+            .flex.pecati {
+              justify-content: center;
+              margin-top: -30px;
+            }
+          }
+        }
+      }
+    }
+  }
 } //media screen end
  
 
