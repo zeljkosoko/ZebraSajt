@@ -2353,6 +2353,64 @@
       }
     }
   }
+
+  /*linijsko matricni*/
+  .content.content-background-image-matricni {
+    .function-description {
+      .function-description-width.function-description-header {
+        margin: 0px;
+        .margin.last-div {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            padding: 30px 20px;
+            margin-bottom: 0px;
+          }
+          .image-flex.flex {
+            .except-image{
+              width: 100%;
+              margin: 0;
+              img {
+                width: 100%;
+                padding: 10px 20px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .printer1,.printer2,.printer3,.printer4 {
+      padding-bottom: 40px;
+      .function-description-width {
+        .width-flex.flex {
+          .both.first-div{
+            width: 40%;
+            margin: 0 0 0 40px;
+            ul {
+              margin-bottom: 0;
+              li {
+                padding: 0;
+              }
+            }
+            .flex.pecati {
+              justify-content: center;
+              margin-top: -30px;
+            }
+          }
+          .both.second-div{
+            width: 60%;
+            margin-left: 0;
+            img{
+              width: 100%;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 } //media screen end
  
 

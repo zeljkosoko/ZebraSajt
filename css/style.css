@@ -2361,5 +2361,57 @@ footer .footer-copyright p {
             justify-content: center;
     margin-top: -30px;
   }
+  /*linijsko matricni*/
+  .content.content-background-image-matricni .function-description .function-description-width.function-description-header {
+    margin: 0px;
+  }
+  .content.content-background-image-matricni .function-description .function-description-width.function-description-header .margin.last-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content.content-background-image-matricni .function-description .function-description-width.function-description-header .margin.last-div h2 {
+    padding: 30px 20px;
+    margin-bottom: 0px;
+  }
+  .content.content-background-image-matricni .function-description .function-description-width.function-description-header .margin.last-div .image-flex.flex .except-image {
+    width: 100%;
+    margin: 0;
+  }
+  .content.content-background-image-matricni .function-description .function-description-width.function-description-header .margin.last-div .image-flex.flex .except-image img {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .content.content-background-image-matricni .printer1, .content.content-background-image-matricni .printer2, .content.content-background-image-matricni .printer3, .content.content-background-image-matricni .printer4 {
+    padding-bottom: 40px;
+  }
+  .content.content-background-image-matricni .printer1 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-matricni .printer2 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-matricni .printer3 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-matricni .printer4 .function-description-width .width-flex.flex .both.first-div {
+    width: 40%;
+    margin: 0 0 0 40px;
+  }
+  .content.content-background-image-matricni .printer1 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-matricni .printer2 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-matricni .printer3 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-matricni .printer4 .function-description-width .width-flex.flex .both.first-div ul {
+    margin-bottom: 0;
+  }
+  .content.content-background-image-matricni .printer1 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-matricni .printer2 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-matricni .printer3 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-matricni .printer4 .function-description-width .width-flex.flex .both.first-div ul li {
+    padding: 0;
+  }
+  .content.content-background-image-matricni .printer1 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-matricni .printer2 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-matricni .printer3 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-matricni .printer4 .function-description-width .width-flex.flex .both.first-div .flex.pecati {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -30px;
+  }
+  .content.content-background-image-matricni .printer1 .function-description-width .width-flex.flex .both.second-div, .content.content-background-image-matricni .printer2 .function-description-width .width-flex.flex .both.second-div, .content.content-background-image-matricni .printer3 .function-description-width .width-flex.flex .both.second-div, .content.content-background-image-matricni .printer4 .function-description-width .width-flex.flex .both.second-div {
+    width: 60%;
+    margin-left: 0;
+  }
+  .content.content-background-image-matricni .printer1 .function-description-width .width-flex.flex .both.second-div img, .content.content-background-image-matricni .printer2 .function-description-width .width-flex.flex .both.second-div img, .content.content-background-image-matricni .printer3 .function-description-width .width-flex.flex .both.second-div img, .content.content-background-image-matricni .printer4 .function-description-width .width-flex.flex .both.second-div img {
+    width: 100%;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

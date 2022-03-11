@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -152,18 +204,18 @@
 				<div class="function-description-width function-description-header">
 					<div class="margin last-div">
 						<h2>Printronix - linijsko matrični štampači</h2>
-						<div class="line"></div>
+						<div class="line no-resp"></div>
 						<div class="image-flex flex">
 							<div class="except-image">
 								<img src="img/oprema/linijsko-matricni-stampaci/p8000.png">
-								<img src="img/oprema/linijsko-matricni-stampaci/p8000-cb.png" class="black-white-image 1">
+								<img src="img/oprema/linijsko-matricni-stampaci/p8000-cb.png" class="black-white-image 1 no-resp">
 								<p>Printronix <span>P8000</span></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even">
+			<div class="function-description even no-resp">
 				<div class="function-description-width">
 					<h3>Najpouzdanija i visoko ekonomična tehnologija štampe velikog obima</h3>
 					<p class="description-header"><span>L</span>inijsko matrični štampači proizvođača <span>PRINTRONIX</span> predstavljaju najpouzdanija i visoko ekonomična rešenja za štampu velikog obima. <span>Š</span>tampajte vašu poslovnu dokumentaicju (otpremnice, račune, liste, izvode)  u industrijskim okruženjima brzo, ekonomično i efikasno,  jer vaš posao ne sme da stane.</p>
@@ -175,7 +227,7 @@
 					<img src="img/oprema/linijsko-matricni-stampaci/logo.png" class="description-header-image">
 				</div>
 			</div>
-			<div class="function-description odd">
+			<div class="function-description odd no-resp">
 				<div class="function-description-width">
 					<div class="width-flex  flex">
 						<div class="both first-div except">
@@ -212,7 +264,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 1-1">
+			<div class="function-description even 1-1 printer1">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -222,7 +274,7 @@
 								<li>Model Sa zatvorenim postoljem.</li>
 								<li>Kabinet modeli.</li>
 							</ul><br>
-							<p>Brzina štampe je od 500 do 2000 linija u minuti.</p><br><br>
+							<p class="no-resp">Brzina štampe je od 500 do 2000 linija u minuti.</p><br><br>
 							<div class="flex pecati">
 								<a href="img/oprema/linijsko-matricni-stampaci/Printronix_P8000.pdf" download="Printronix_P8000"><div>
 									<img src="img/pdf-pecat.png">
@@ -230,15 +282,15 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
 						<div class="both second-div">
 							<img src="img/oprema/linijsko-matricni-stampaci/p8000x3.png" class="except-image-height">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd">
+			<div class="function-description odd no-resp">
 				<div class="function-description-width middle-image">
 					<h3>Upravljajte vašom flotom P8000 uređaja sa jednog mesta</h3>
 					<img src="img/oprema/linijsko-matricni-stampaci/pne.png" class="description-header-image-background">
@@ -247,12 +299,12 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/YyTktv2XBNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
-			<div class="function-description even">
+			<div class="function-description even printer3">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4>Printronix potrošni materijali</h4>
-							<p>Pravilan izbor potrošnog materijala za printronix linijsko matrične štampače, serije P8000 predstavlja jedan od ključnih preduslova za pravilno i dugotrajno funkcionisanje ovih uređaja u zahtevnom okruženju. Izborom Originalnih kertridž ribona, osigurali ste trajnost vitalnih delova, maksimalne performanse i učinak u dužem vremenskom periodu. Zato je preporuka da koristite original Printronix potrošni materijal, koji su prošli rigoroznu test kontrolu u proizvodnji.</p><br><br>
+							<p class="no-resp">Pravilan izbor potrošnog materijala za printronix linijsko matrične štampače, serije P8000 predstavlja jedan od ključnih preduslova za pravilno i dugotrajno funkcionisanje ovih uređaja u zahtevnom okruženju. Izborom Originalnih kertridž ribona, osigurali ste trajnost vitalnih delova, maksimalne performanse i učinak u dužem vremenskom periodu. Zato je preporuka da koristite original Printronix potrošni materijal, koji su prošli rigoroznu test kontrolu u proizvodnji.</p><br><br>
 							<div class="flex pecati">
 								<a href="barkod-stampaci.html"><div>
 									<img src="img/barkod-stampaci-pecat.png">
@@ -264,8 +316,8 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
 						<div class="both second-div">
 							<img src="img/oprema/linijsko-matricni-stampaci/ribbons.png" class="except-image-height">
 						</div>
@@ -276,27 +328,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -325,4 +377,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>
