@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -152,7 +204,7 @@
 				<div class="function-description-width function-description-header">
 					<div class="margin">
 						<h2>Tiket štampači - štampa karata i ulaznica</h2>
-						<div class="line"></div>
+						<div class="lin no-resp"></div>
 						<div class="image-flex flex">
 							<div>
 								<img src="img/oprema/tiket-stampaci/lemur.png">
@@ -173,7 +225,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd">
+			<div class="function-description odd no-resp">
 				<div class="function-description-width">
 					<h3>Tiket štampači - štampa karata i ulaznica</h3>
 					<p class="description-header"><span>U</span> ponudi Zebracon-a su i svi modeli termalnih štampača svetski poznatog brenda BOCA. <span>O</span>vaj proizvođač je jedan od pionira specijalizovanih štampača štampu pre svega karata i ulaznica, ali se takođe koriste i za štampu ID tagova, nalepnica i računa. <span>M</span>odel LEMUR koji se izrađuje u više varijacija, zavisno od konkretne namene i potreba, primenu nalazi na šalterima bioskopa, muzeja, koncertnih dvorana i drugim prodajnim mestima - praktično na svim mestima gde je bitna brza, kvalitetna i pouzdana štampa.<br>
@@ -181,7 +233,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="function-description even 1-1">
+			<div class="function-description even 1-1 printer1">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -189,9 +241,9 @@
 							<ul>
 								<li>Najprodavaniji i model koji nudi sve benefite BOCA štampača.</li>
 								<li>Kontrol panel sa LCD displejem, automatsko uvlačenje karata.</li>
-								<li>Opcije za širinu štampe, kao i opcije kada je rezolucija štampe u pitanju omogućava fleskibilnost i modularnost.</li>
+								<li class="no-resp">Opcije za širinu štampe, kao i opcije kada je rezolucija štampe u pitanju omogućava fleskibilnost i modularnost.</li>
 								<li>Tear bar – za cepanje karata ili automatski sekač.</li>
-								<li>Mogućnost vertikalne ili horizontalne ugradnje u razne tipove nameštaja.</li>
+								<li class="no-resp">Mogućnost vertikalne ili horizontalne ugradnje u razne tipove nameštaja.</li>
 							</ul><br><br>
 							<div class="flex pecati">
 								<a href="potrosni-materijali.html"><div>
@@ -200,23 +252,23 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/tiket-stampaci/lemur.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd 2-1">
+			<div class="function-description odd 2-1 printer2">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4>Boca <span>Lemur-S</span></h4>
 							<ul>
-								<li>Opcija Lemur štampača sa internim smeštajem karata.</li>
+								<li class="no-resp">Opcija Lemur štampača sa internim smeštajem karata.</li>
 								<li>Standarna podesiva širina štampe 2“-3.25“.</li>
-								<li>Opto senzori i sa termalne strane za čitanje start-stop pozicije.</li>
+								<li class="no-resp">Opto senzori i sa termalne strane za čitanje start-stop pozicije.</li>
 								<li>Mogućnost dodatnih interfejsa WiFi/Bluetooth/Ethernet.</li>
 								<li>Opciono RFID enkodiranje medija.</li>
 							</ul><br><br>
@@ -227,15 +279,15 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/tiket-stampaci/lemur-s.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 3-1">
+			<div class="function-description even 3-1 printer3">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -243,9 +295,9 @@
 							<ul>
 								<li>Štampač koji dolazi sa standardnim funkcionalnostima svih BOCA štampača.</li>
 								<li>Prednost ovog modela su dva porta za štampu – ukoliko imate dva različita tipa karata.</li>
-								<li>Jedna logička jedinica koja kontroliše dva totalno nezavisna porta za šatmpu pa tako lako i bez promene medija možete birati kartu koju štampate.</li>
+								<li class="no-resp">Jedna logička jedinica koja kontroliše dva totalno nezavisna porta za šatmpu pa tako lako i bez promene medija možete birati kartu koju štampate.</li>
 								<li>Opcije 200, 300 ili 600 dpi rezolucija štampe sa širinom štampe do 4“.</li>
-								<li>Namenjen za dinamično i visoko zahtevno okruženje.</li>
+								<li class="no-resp">Namenjen za dinamično i visoko zahtevno okruženje.</li>
 							</ul><br><br>
 							<div class="flex pecati">
 								<a href="potrosni-materijali.html"><div>
@@ -254,9 +306,9 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/tiket-stampaci/lemur-2p.png">
 						</div>
 					</div>
@@ -266,27 +318,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -315,4 +367,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>

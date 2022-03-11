@@ -2316,5 +2316,50 @@ footer .footer-copyright p {
             justify-content: center;
     margin-top: -30px;
   }
+  /*tiket stampaci*/
+  .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header {
+    margin: 0px;
+  }
+  .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin, .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin.last-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin h2, .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin.last-div h2 {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin .image-flex.flex, .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin.last-div .image-flex.flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin .image-flex.flex div, .content.content-background-image-ticket-stampaci .function-description .function-description-width.function-description-header .margin.last-div .image-flex.flex div {
+    margin: 0px;
+    padding: 10px 10px;
+  }
+  .content.content-background-image-ticket-stampaci .printer1, .content.content-background-image-ticket-stampaci .printer2, .content.content-background-image-ticket-stampaci .printer3 {
+    padding-bottom: 40px;
+  }
+  .content.content-background-image-ticket-stampaci .printer1 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-ticket-stampaci .printer2 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-ticket-stampaci .printer3 .function-description-width .width-flex.flex .both.first-div {
+    margin: 0 30px 0 40px;
+  }
+  .content.content-background-image-ticket-stampaci .printer1 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-ticket-stampaci .printer2 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-ticket-stampaci .printer3 .function-description-width .width-flex.flex .both.first-div ul {
+    margin-bottom: 0;
+  }
+  .content.content-background-image-ticket-stampaci .printer1 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-ticket-stampaci .printer2 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-ticket-stampaci .printer3 .function-description-width .width-flex.flex .both.first-div ul li {
+    padding: 0;
+  }
+  .content.content-background-image-ticket-stampaci .printer1 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-ticket-stampaci .printer2 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-ticket-stampaci .printer3 .function-description-width .width-flex.flex .both.first-div .flex.pecati {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
