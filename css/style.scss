@@ -2411,6 +2411,53 @@
       }
     }
   }
+
+  /*rucni terminali*/
+  .content.content-background-image-terminali {
+    .function-description {
+      .function-description-width.function-description-header {
+        margin: 0px;
+        .margin {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            padding: 30px 20px;
+            margin-bottom: 0px;
+          }
+          .image-flex.flex {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            div {
+              margin: 0px;
+              padding: 10px 10px;
+            }
+            }
+          }
+        }
+
+      }
+    }
+    
+    .printer1,.printer2,.printer3,.printer4,.printer5,.printer6,.printer7,.printer8{
+      padding-bottom: 40px;
+      .function-description-width {
+        .width-flex.flex {
+          .both.first-div{
+            margin: 0 30px 0 40px;
+            ul {
+              margin-bottom: 0;
+              li {
+                padding: 0;
+              }
+            }
+            .flex.pecati {
+              justify-content: center;
+              margin-top: -30px;
+            }
+          }
+        }
+      }
+    }
 } //media screen end
  
 
