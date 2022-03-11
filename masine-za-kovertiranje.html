@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -152,7 +204,7 @@
 				<div class="function-description-width function-description-header">
 					<div class="margin">
 						<h2>Kovertiranje u koverte – insertacija dokumenata</h2>
-						<div class="line"></div>
+						<div class="line no-resp"></div>
 						<div class="image-flex flex">
 							<div>
 								<img src="img/oprema/kovertirke/1050.png">
@@ -173,7 +225,7 @@
 					</div>
 					<div class="margin last-div">
 						<h2>Jednolisno pakovanje – pressure seal</h2>
-						<div class="line"></div>
+						<div class="line no-resp"></div>
 						<div class="image-flex flex">
 							<div>
 								<img src="img/oprema/kovertirke/mailfinisher-4000.png">
@@ -194,24 +246,24 @@
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd">
+			<div class="function-description odd no-resp">
 				<div class="function-description-width">
 					<h3>Kovertiranje u koverte – insertacija dokumenata</h3>
 					<p class="description-header"><span>T</span>ehnologija insertacije podrazumeva da se naštampana dokumenta na zadati način saviju, insertuju i spakuju u klasičnu kovertu. <span>B</span>ilo da je ona sa prozorom ili bez, različitih veličina i načina savijanja, ovaj način pakovanja omogućava da se zapakuje više listova u jednu kovertu. <span>P</span>ri tom se kao dodatna kontrola može obezbediti praćenje toka pakovanja preko barkoda, OMR koda ili nekog custom rešenja, a sve po zahtevu korisnika. <span>D</span>odavanje priloga, flajera ili koverata za odgovor jesu prednosti koje insertacija obezbeđuje. <span>P</span>ored toga izuzetna je modularnost, pogotovu većih sistema za pakovanje, koja omogućava integraciju u okviru postojećih print center rešenja. <span>O</span>d raznih vrsta postolja, izlaznih traka, kamera za praćenje do integracije za postojećim frankir sistemima za pripremu odlazne pošte.</p>
 				</div>
 			</div>
-			<div class="function-description even 1-1">
+			<div class="function-description even 1-1 koverta1">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4>Hefter SI <span>1050</span></h4>
 							<ul>
-								<li>Primena: pakovanje platnih listića, pakovanje marketing materijala, pakovanje obaveštenja, izvoda, ios-a i sl.</li>
+								<li class="no-resp">Primena: pakovanje platnih listića, pakovanje marketing materijala, pakovanje obaveštenja, izvoda, ios-a i sl.</li>
 								<li>Mala, kancelarijska oprema za kovertiranje personalnih dokumenata.</li>
-								<li>Brzina rada od 900 insertacija na sat.</li>
+								<li class="no-resp">Brzina rada od 900 insertacija na sat.</li>
 								<li>Namenjen manje zahtevnim korisnicima za obimom kovertiranja do 5,000 koverata mesečno.</li>
 								<li>Poseduje dva A4 podavača, kao i podavač priloga u fomatu 1/3 A4.</li>
-								<li>Primena: pakovanje platnih listića, pakovanje marketing materijala, pakovanje obaveštenja, izvoda, ios-a i sl.</li>
+								<li class="no-resp">Primena: pakovanje platnih listića, pakovanje marketing materijala, pakovanje obaveštenja, izvoda, ios-a i sl.</li>
 							</ul><br><br>
 							<div class="flex pecati">
 								<a href="img/oprema/kovertirke/Hefter_SI_1050.pdf" download="Hefter_SI_1050"><div>
@@ -224,15 +276,15 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/kovertirke/1050.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd 2-1">
+			<div class="function-description odd 2-1 koverta2">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -241,8 +293,8 @@
 								<li>Osnovna konfiguracija u seriji 3000 Hefter-ovih pakerica.</li>
 								<li>Namenjena za srednje zahtevne korisnike čiji obim kovertiranja ide do 50.000 koverata mesečno.</li>
 								<li>Uz brzinu pakovanja od 3.000 koverata po satu može biti pouzdano rešenje za kritična mesta mailing-a.</li>
-								<li>Izrađena od metalnih komponenti uz specijalno izrađene valjke koji omogućavaju dugo i nesmetano korišćenje.</li>
-								<li>Primena: kovertiranje računa, izvoda, cirkularnih pisama i sl. Često, računi imaju više listova koji, naravno, moraju biti združeni i zapakovani zajedno, automatski i bez grešaka – rešenje je serija Hefter 3000.</li>
+								<li class="no-resp">Izrađena od metalnih komponenti uz specijalno izrađene valjke koji omogućavaju dugo i nesmetano korišćenje.</li>
+								<li class="no-resp">Primena: kovertiranje računa, izvoda, cirkularnih pisama i sl. Često, računi imaju više listova koji, naravno, moraju biti združeni i zapakovani zajedno, automatski i bez grešaka – rešenje je serija Hefter 3000.</li>
 							</ul><br><br>
 							<div class="flex pecati">
 								<a href="img/oprema/kovertirke/Hefter_SI_3350.pdf" download="Hefter_SI_3350"><div>
@@ -255,24 +307,24 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/kovertirke/3350.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 3-1">
+			<div class="function-description even 3-1 koverta3">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4>Hefter SI <span>5250</span></h4>
 							<ul>
-								<li>Osnovni model iz serije 5000 Hefterovih mašina za kovertiranje.</li>
-								<li>Unapređena verzija nosi oznaku SI5450.</li>
+								<li class="no-resp">Osnovni model iz serije 5000 Hefterovih mašina za kovertiranje.</li>
+								<li class="no-resp">Unapređena verzija nosi oznaku SI5450.</li>
 								<li>Oba sistema namenjena zahtevnijim korisnicima kada je automatska insertacija u pitanju.</li>
-								<li>Uz brzinu pakovanja od 4.300 koverata po satu model SI5250 je projektovan za mesečno opterećenje do 100.000 insertacija.</li>
+								<li class="no-resp">Uz brzinu pakovanja od 4.300 koverata po satu model SI5250 je projektovan za mesečno opterećenje do 100.000 insertacija.</li>
 								<li>Moguće je zapakovati do 8 listova A4 veličine koji se savijaju na tri dela.</li>
 								<li>Flekibilnost i modularnost mašine sa mogućnošću nadogradnje sistema.</li>
 							</ul><br><br>
@@ -287,21 +339,21 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/kovertirke/5250.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd">
+			<div class="function-description odd no-resp">
 				<div class="function-description-width">
 					<h3>Jednolisno pakovanje – pressure seal</h3>
 					<p class="description-header"><span>R</span>adi se o tehnologiji pakovanja kada od obrasca na kome se štampa, presavijanjem i pritiskom u pakerici, nastaje zapakovana forma – otuda i naziv pressure seal tehnologija. <span>O</span>brasac na sebi ima već nanos hladnog lepka po ivicama, te se na upravo tim mestima u pakerici vrši slepljivanje u zapakovani format. <span>Z</span>avisno od veličine i izbora načina savijanja pakerici se zadaje traženi način pakovanja. <span>P</span>roces štampe kod ovog načina pakovanja može biti nezavisan (off-line) ili se kod posebnih pakerica može napraviti linija sa kompatibilnim modelima laserskih štampača (in-line). <span>K</span>oristi su višestruke: kontrola grešaka – jedan list uvek jedna koverta, nema potrebe za dodatnim troškom koverte – od lista na kome se štampa nastaje koverta, velika brzina i efikasnost rada i na kraju reč je o opremi koja se jednostavno i lako održava.</p>
 				</div>
 			</div>
-			<div class="function-description even 4-1">
+			<div class="function-description even 4-1 koverta4">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -309,8 +361,8 @@
 							<ul>
 								<li>Proces štampe i pakovanja se objedinjuje u jednom koraku.</li>
 								<li>Obrasci sa lepkom se postavljaju u štampač, gde se nakon štampe prosleđuju preko bridg-a u pakericu.</li>
-								<li>Na taj način skraćuje se proces manipulacije dokumentima, ali i obezbeđuje tajnost podataka, jer je nemoguće videti naštampani sadržaj.</li>
-								<li>Uz brzinu kovertiranja od 3.300 formi po satu i mesečni obim pakovanja 50.000 formi može biti idealno rešenje za srednje zahtevne korisnike.</li>
+								<li class="no-resp">Na taj način skraćuje se proces manipulacije dokumentima, ali i obezbeđuje tajnost podataka, jer je nemoguće videti naštampani sadržaj.</li>
+								<li class="no-resp">Uz brzinu kovertiranja od 3.300 formi po satu i mesečni obim pakovanja 50.000 formi može biti idealno rešenje za srednje zahtevne korisnike.</li>
 								<li>Veliki izbor kompatibilnih štampača koji se mogu povezati u liniju HP, Kyocera, Samsung, Lexmark, Canon itd.</li>
 							</ul><br><br>
 							<div class="flex pecati">
@@ -324,15 +376,15 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/kovertirke/mailfinisher-4000.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd 5-1">
+			<div class="function-description odd 5-1 koverta5">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -341,8 +393,8 @@
 								<li>Entry level rešenje za korisnike za obimom kovertiranja do 10.000 fomi mesečno.</li>
 								<li>Lako podešavanje manuelnim putem načina savijanja (Z, C ili V).</li>
 								<li>Može da pakuje obrasce do 14“ dužine uz detekciju duplo povučenog dokumenta.</li>
-								<li>Izuzetno tiha, malih - office gabarita koji se savršeno uklapaju u radno okruženje.</li>
-								<li>Uz pakovanje brzinom od 2.000 formi na sat omogućava da sve Vaše potrebe za kovertiranje završite brzo, lako i jednostavno bilo da pakujete račune, platne liste ili reklamne flajere.</li>
+								<li class="no-resp">Izuzetno tiha, malih - office gabarita koji se savršeno uklapaju u radno okruženje.</li>
+								<li class="no-resp">Uz pakovanje brzinom od 2.000 formi na sat omogućava da sve Vaše potrebe za kovertiranje završite brzo, lako i jednostavno bilo da pakujete račune, platne liste ili reklamne flajere.</li>
 							</ul><br><br>
 							<div class="flex pecati">
 								<a href="img/oprema/kovertirke/Officemate_2D.pdf" download="Officemate_2D"><div>
@@ -355,27 +407,27 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/kovertirke/officemate-2d.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 6-1">
+			<div class="function-description even 6-1 koverta6">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4>Welltec Postmate <span>3<span></h4>
 							<ul>
 								<li>Uređaj namenjen zahtevnim mestima kovertiranja.</li>
-								<li>Sa mesečnim obimom pakovanja do 100.000 formi mesečno može zadovoljiti zahteve velikih korisnika.</li>
+								<li class="no-resp">Sa mesečnim obimom pakovanja do 100.000 formi mesečno može zadovoljiti zahteve velikih korisnika.</li>
 								<li>Brzina rada mašine je 5.700 formi po satu.</li>
 								<li>Automatski ulazni podavač, sa elektronski podesivim načinom savijanja.</li>
-								<li>LCD displej nudi lako podešavanje rada.</li>
-								<li>Prednost ovog modela je što može raditi nezavisno od štampača, ali se isto tako može opciono povezati i u liniju sa kompatiblinim štampačem.</li>
-								<li>Opcije uređaja su izlazni magacini, trake i postolja.</li>
+								<li class="no-resp">LCD displej nudi lako podešavanje rada.</li>
+								<li class="no-resp">Prednost ovog modela je što može raditi nezavisno od štampača, ali se isto tako može opciono povezati i u liniju sa kompatiblinim štampačem.</li>
+								<li class="no-resp">Opcije uređaja su izlazni magacini, trake i postolja.</li>
 							</ul><br><br>
 							<div class="flex pecati">
 								<a href="img/oprema/kovertirke/Postmate_3.pdf" download="Postmate_3"><div>
@@ -388,9 +440,9 @@
 								</div></a>
 							</div>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/kovertirke/postmate-3.png">
 						</div>
 					</div>
@@ -400,27 +452,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -449,4 +501,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>

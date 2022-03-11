@@ -2503,7 +2503,52 @@
       }
     }
   }
-    
+  
+  /*masine za kovertiranje*/
+  .content.content-background-image-kovertirke{
+    .function-description {
+      .function-description-width.function-description-header {
+        margin: 0px;
+        .margin {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            padding: 30px 20px;
+            margin-bottom: 0px;
+          }
+          .image-flex.flex {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            div {
+              margin: 0px;
+              padding: 10px 10px;
+            }
+            }
+          }
+        }
+
+      }
+    .koverta1,.koverta2,.koverta3,.koverta4,.koverta5,.koverta6{
+      padding-bottom: 40px;
+      .function-description-width {
+        .width-flex.flex {
+          .both.first-div{
+            margin: 0 30px 0 40px;
+            ul {
+              margin-bottom: 0;
+              li {
+                padding: 0;
+              }
+            }
+            .flex.pecati {
+              justify-content: center;
+              margin-top: -30px;
+            }
+          }
+        }
+      }
+    }
+  }
 } //media screen end
  
 
