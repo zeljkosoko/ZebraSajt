@@ -2586,6 +2586,52 @@
       }
     }
    }
+
+   /*potrosni mat*/
+   .content.content-background-image-potrosni{
+    .function-description {
+      .function-description-width.function-description-header {
+        margin: 0px;
+        .margin {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            padding: 30px 20px;
+            margin-bottom: 0px;
+          }
+          .image-flex.flex {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            div {
+              margin: 0px;
+              padding: 10px 10px;
+            }
+            }
+          }
+        }
+
+      }
+    .potrosni1,.potrosni2,.potrosni3,.potrosni4,.potrosni5,.potrosni6,.potrosni7,.potrosni8{
+      padding-bottom: 40px;
+      .function-description-width {
+        .width-flex.flex {
+          .both.first-div{
+            margin: 0 30px 0 40px;
+            ul {
+              margin-bottom: 0;
+              li {
+                padding: 0;
+              }
+            }
+            .flex.pecati {
+              justify-content: center;
+              margin-top: -30px;
+            }
+          }
+        }
+      }
+    }
+   }
 } //media screen end
  
 

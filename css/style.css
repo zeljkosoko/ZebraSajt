@@ -2581,5 +2581,50 @@ footer .footer-copyright p {
   .content.content-background-image-kancelarijski .kanc1 .function-description-width .width-flex.flex .both.first-div {
     margin: 0 30px 0 40px;
   }
+  /*potrosni mat*/
+  .content.content-background-image-potrosni .function-description .function-description-width.function-description-header {
+    margin: 0px;
+  }
+  .content.content-background-image-potrosni .function-description .function-description-width.function-description-header .margin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content.content-background-image-potrosni .function-description .function-description-width.function-description-header .margin h2 {
+    padding: 30px 20px;
+    margin-bottom: 0px;
+  }
+  .content.content-background-image-potrosni .function-description .function-description-width.function-description-header .margin .image-flex.flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content.content-background-image-potrosni .function-description .function-description-width.function-description-header .margin .image-flex.flex div {
+    margin: 0px;
+    padding: 10px 10px;
+  }
+  .content.content-background-image-potrosni .potrosni1, .content.content-background-image-potrosni .potrosni2, .content.content-background-image-potrosni .potrosni3, .content.content-background-image-potrosni .potrosni4, .content.content-background-image-potrosni .potrosni5, .content.content-background-image-potrosni .potrosni6, .content.content-background-image-potrosni .potrosni7, .content.content-background-image-potrosni .potrosni8 {
+    padding-bottom: 40px;
+  }
+  .content.content-background-image-potrosni .potrosni1 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-potrosni .potrosni2 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-potrosni .potrosni3 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-potrosni .potrosni4 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-potrosni .potrosni5 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-potrosni .potrosni6 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-potrosni .potrosni7 .function-description-width .width-flex.flex .both.first-div, .content.content-background-image-potrosni .potrosni8 .function-description-width .width-flex.flex .both.first-div {
+    margin: 0 30px 0 40px;
+  }
+  .content.content-background-image-potrosni .potrosni1 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-potrosni .potrosni2 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-potrosni .potrosni3 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-potrosni .potrosni4 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-potrosni .potrosni5 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-potrosni .potrosni6 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-potrosni .potrosni7 .function-description-width .width-flex.flex .both.first-div ul, .content.content-background-image-potrosni .potrosni8 .function-description-width .width-flex.flex .both.first-div ul {
+    margin-bottom: 0;
+  }
+  .content.content-background-image-potrosni .potrosni1 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-potrosni .potrosni2 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-potrosni .potrosni3 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-potrosni .potrosni4 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-potrosni .potrosni5 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-potrosni .potrosni6 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-potrosni .potrosni7 .function-description-width .width-flex.flex .both.first-div ul li, .content.content-background-image-potrosni .potrosni8 .function-description-width .width-flex.flex .both.first-div ul li {
+    padding: 0;
+  }
+  .content.content-background-image-potrosni .potrosni1 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-potrosni .potrosni2 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-potrosni .potrosni3 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-potrosni .potrosni4 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-potrosni .potrosni5 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-potrosni .potrosni6 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-potrosni .potrosni7 .function-description-width .width-flex.flex .both.first-div .flex.pecati, .content.content-background-image-potrosni .potrosni8 .function-description-width .width-flex.flex .both.first-div .flex.pecati {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

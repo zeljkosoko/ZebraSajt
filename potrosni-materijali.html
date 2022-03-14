@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -152,7 +204,7 @@
 				<div class="function-description-width function-description-header">
 					<div class="margin">
 						<h2>Potrošni materijali</h2>
-						<div class="line"></div>
+						<div class="line no-resp"></div>
 						<div class="image-flex flex">
 							<div>
 								<img src="img/oprema/potrosni-materijali/blanko-nalepnice.png">
@@ -202,7 +254,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd 1-1">
+			<div class="function-description odd 1-1 potrosni1">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -211,69 +263,69 @@
 							<br><span>-</span> od papirnih do sintetičkih nalepnica
 							<br><span>-</span> matiranih, polusjajnih ili sjajnih
 							<br><span>-</span> belih, sivih ili transparentnih...</p><br>
-							<p>Zavisno od uslova aplikacije predlažemo optimalni lepak koji će zadovoljiti tražene zahteve. Od klasičnih akrilnih lepkova sa permanentnih lepkom, preko lako odlepivih komponennti lepka sve do ultra jakih rubber based lepkova.</p><br><br>
-							<p>Na raspolaganju je veliki broj alata za izradu nalepnica svih dimenzija.</p>
+							<p class="no-resp">Zavisno od uslova aplikacije predlažemo optimalni lepak koji će zadovoljiti tražene zahteve. Od klasičnih akrilnih lepkova sa permanentnih lepkom, preko lako odlepivih komponennti lepka sve do ultra jakih rubber based lepkova.</p><br><br>
+							<p class="no-resp">Na raspolaganju je veliki broj alata za izradu nalepnica svih dimenzija.</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/blanko-nalepnice.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 2-1">
+			<div class="function-description even 2-1 potrosni2">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4><span>R</span>ibon folije</h4>
 							<p>Na bazi materijala koji se koristi za štampu nalepnica, savetujemo Vas koji je pravi ribon da bi se ostvarili željeni efekti. Vrstu ribon folije diktira i vrsta print mehanizma štampača odnosno pozicioniranost glave za štampu.</p><br>
-							<p>Nudimo ribon folije kako za klasične termalne štampače, tako i ribone za TTO štampače, gde su uglavnom veće brzine štampe te stoga morate koristiti i kompatibilni ribon.
+							<p class="no-resp">Nudimo ribon folije kako za klasične termalne štampače, tako i ribone za TTO štampače, gde su uglavnom veće brzine štampe te stoga morate koristiti i kompatibilni ribon.
 							Ribon omogućava da Vaša štampa na nalepnici bude postojana shodno očekivanju. Od manje zahtevnih obeležavanja kutija i pakovanja, do obeležavanja specifičnih vrsta proizvoda koji zahtevaju različite vrste otpornosti na vodu, UV zrake, razne hemikalije i sl.</p><br>
-							<p>Bezbednosne ribon folije omogućavaju određeni oblik zaštite za naštampani materijal, tako su obično pod određenim snopom UV zraka vidljivi određeni elementi štampe ili pak menjaju svoju boju u odrešenu nijansu.</p><br>
+							<p class="no-resp">Bezbednosne ribon folije omogućavaju određeni oblik zaštite za naštampani materijal, tako su obično pod određenim snopom UV zraka vidljivi određeni elementi štampe ili pak menjaju svoju boju u odrešenu nijansu.</p><br>
 							<p>Posebna linija ribon folija jesu ketridž riboni za Printronix linijsko-materične štampače.</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/riboni.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd 3-1">
+			<div class="function-description odd 3-1 potrosni3">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4><span>Š</span>tampane nalepnice</h4>
 							<p>Pored blanko programa nalepnica, za Vas radimo i štampu kolornih nalepnica. Za procenu cene dovoljno je da od Vas imamo vektorsku pripremu izgleda i definisanu vrstu materijala na kome se nalepnice izrađuju.</p><br>
-							<p>Tehnike štampe koje su na raspolaganju u našem proizvodnom pogonu jesu ofset, flekso i digitalna. Uz dosta opcija kada su doradne radnje u pitanju (štancovanje, ricovanje, perforiranje, laminacija, lakiranje itd.), možemo ponuditi praktično gotove nalepnice bilo koje namene. Naša bogata iskustva su bazirna na izradi raznih tipova energetskih, ambalažnih, maloprodajnih, farmaceutskih i gumarskih nalepnica.</p>
+							<p class="no-resp">Tehnike štampe koje su na raspolaganju u našem proizvodnom pogonu jesu ofset, flekso i digitalna. Uz dosta opcija kada su doradne radnje u pitanju (štancovanje, ricovanje, perforiranje, laminacija, lakiranje itd.), možemo ponuditi praktično gotove nalepnice bilo koje namene. Naša bogata iskustva su bazirna na izradi raznih tipova energetskih, ambalažnih, maloprodajnih, farmaceutskih i gumarskih nalepnica.</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/stampane-nalepnice.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 4-1">
+			<div class="function-description even 4-1 potrosni4">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4><span>P</span>ressure seal obrasci</h4>
-							<p>Za mašine za jednolisno pakovanje proizvodimo odgovarajuće obrasce za pakovanje. Obrasci su različitih dimenzija i načina savijanja sa unapred nanešenim lepkom. Lepak se aktivira isključivo pod pritiskom mašine za pakovanje, ne i na temperaturi koja nastaje u laserskom štampaču. Obrasci mogu biti A4, 12“,14“ pa sve do 16“ dužine zavisno od potreba i traženog mesta za štampu sadržaja. Možemo Vam ih isporučivati u blanko verziji ili pak predštampane po Vašem unapred definisanom dizajnu.</p><br>
+							<p class="no-resp">Za mašine za jednolisno pakovanje proizvodimo odgovarajuće obrasce za pakovanje. Obrasci su različitih dimenzija i načina savijanja sa unapred nanešenim lepkom. Lepak se aktivira isključivo pod pritiskom mašine za pakovanje, ne i na temperaturi koja nastaje u laserskom štampaču. Obrasci mogu biti A4, 12“,14“ pa sve do 16“ dužine zavisno od potreba i traženog mesta za štampu sadržaja. Možemo Vam ih isporučivati u blanko verziji ili pak predštampane po Vašem unapred definisanom dizajnu.</p><br>
 							<p>Posebna opcija proizvoda jesu PIN obrasci za specijalno zaštićenim mestom gde se uštampava pin ili šifra za korisnika.</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/pressure-seal-obrasci.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd 5-1">
+			<div class="function-description odd 5-1 potrosni5">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -281,15 +333,15 @@
 							<p>U ponudi su i širok spektar svih vrsta koverata za svakodnevnu kancelarijsku upotrebu. U najvećem broju slučajeva u upotrebi su bele samolepljive koverte, sa levim/desnim prozorom ili bez njega, u dimenzijama ameriken koverte/DL, C5, C6 ili C4.</p><br>
 							<p>Treba razlikovati klasičnu kovertu od one za mašinsko pakovanje. Ukoliko koristite neku od naših mašina za insertaciju preporučićemo pravo rešenje za model koverti koji je primeren načinu pakovanja.</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/koverte.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 6-1">
+			<div class="function-description even 6-1 potrosni6">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -298,32 +350,32 @@
 							<p>Opciono nudimo numeraciju, perforiranje, apliciranje holograma po datom dizajnu, UV lak, specijalne tipove zaštite i sl. Karte mogu biti izrađene u tabaku ili u rolni. Sa obaveznim senzorom za bilo koji tip štampača: blackmark, notch ili sa izbijenom rupicom.</p><br>
 							<p>Specijalna linija kartona izrađujem se on sintetičkog YUPO materijala koji je otporan na cepanje i trganje. Glavna namena ovog tipa proizvoda je beleženje proizvodnih procesa u fabrikama.</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/termo-karte.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description odd 7-1">
+			<div class="function-description odd 7-1 potrosni7">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
 							<h4><span>S</span>amolepljivi džepovi</h4>
 							<p>Samolepljivi džepovi (koverte) se koriste za pakovanje dokumentacije koja prati robu u transportu: za fakture, dostavnice, tovarne listove, itd.</p><br>
-							<p>Pozadina je samolepljiva i uklanjanjem silikonskog papira moguće je apliciranje na transportno pakovanje ili direktno na robu. Prednji deo izrađen je od polietilena i može biti providan radi boljeg pristupa ili može biti urađen u štampi. Raspoloživi su u više dimenzija zavisno od konkretnog zahteva.</p><br>
+							<p class="no-resp">Pozadina je samolepljiva i uklanjanjem silikonskog papira moguće je apliciranje na transportno pakovanje ili direktno na robu. Prednji deo izrađen je od polietilena i može biti providan radi boljeg pristupa ili može biti urađen u štampi. Raspoloživi su u više dimenzija zavisno od konkretnog zahteva.</p><br>
 							<p>Specifičan artikal sa jako bitnom karakteristikom – da obezbedi vrhunsku sigurnost dokumenata u transportu.</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/dzepovi.png">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="function-description even 8-1">
+			<div class="function-description even 8-1 potrosni8">
 				<div class="function-description-width">
 					<div class="width-flex flex">
 						<div class="both first-div">
@@ -334,16 +386,16 @@
 							<p>Kao potvrda kvaliteta proizvodnje i svih proizvoda, laserski toneri koje distribuiramo su sertifikovani svim potrebni standardima kvaliteta: ISO 9001:2008, ISO 14001:2004, STMC, ISO 19752, ISO 19798, MSDS.</p><br>
 							<p><span>* Fabrički reproizvedeni</span> (reciklirani) toneri i kertridži su takođe dosta jeftiniji od OEM, ali ne u tolikoj meri kao kompatibilni. Razlog tome je što se ne proizvode masovno kao kompatibilni pošto se u proizvodnji koriste isključivo samo prazni originalni kertridži. I kod njih mana može biti varijacija u kvalitetu.</p>
 							<p><span>Naša kompanija ne radi prodaju ovakvih tonera i kertridža jer se kvalitet ne poklapa sa zahtevima naših korisnika.</span></p><br>
-							<p>Prednosti i mane:
+							<p class="no-resp">Prednosti i mane:
 							<br><span>- OEM</span> toner i kertridž je onaj koji dolazi uz štampač koji kupite (obično je oko 50% od punog kapaciteta) i garantuje vrhunski kvalitet otiska, broj odštampanih strana... Zapravo, sigurni ste da će sve biti kako treba ako kupite OEM kertridž. Ali, njegova velika mana je CENA. U nekim slučajevima se može desiti da je sam toner ili set  kertridža za uređaj skuplji nego sam štampač!
 							<br><span>- Kompatibilni</span> toneri i kertridži donose uštedu u novcu 50-80%, nekada I više od 100% i predstavljaju odličan izbor za svakodnevnu štampu. Kvalitet je dobar, razlikuje se od proizvođača do proizvođača, tako da treba obratiti pažnju na brend koji se koristi, odnosno fabriku u kojoj se proizvodi. Naši korisnici dobijaju tonere od samo 2 distirbutera za koje smo se odlučili s obzirom da je kvalitet skoro na nivou OEM tonera i kertridža. Dodatna pogodnost je garancija od godinu dana koja svakom našem korisniku daje sigurnost u poslovanju I samoj eksploataciji.</p><br>
-							<p>Za korisnike kojima je potreban izuzetan kvalitet štampe (arhitektonski biroi i kompanije koje uglavnom koriste kolorne štampače) i koji ne žele da razmišljaju da li će boje biti potpuno iste kao kod prvog tonera koji ste dobili uz kupljeni štampač, onda je izbor OEM (originalan) toner. Uz dodatak da će kupovina originalnih tonera uvek biti stvar za polemisanje zbog njihove cene.</p><br>
-							<p>Ukoliko imate svakodnevnu upotrebu štampe, pretežno crno belu štampu, onda će Vam najisplativije biti da se opredelite za kompatibilne ili for use tonere. Tu ne možete pogrešiti s obzirom da Zebracon doo sarađuje samo sa proverenim, renomiranim uvoznicima i kvalitet je zagarantovan. Uz dodatnu sigurnost u vidu garancije na sve laserske tonere od godinu dana.</p><br>
-							<p>Ako i dalje imate bilo kakve nedoumice, slobodno nas pozovite i naš iskusan tim će vam dati konkretne predloge i pouzdane informacije, koji će Vam pomoći u izboru najboljeg rešenja za Vašu kompaniju!</p>
+							<p class="no-resp">Za korisnike kojima je potreban izuzetan kvalitet štampe (arhitektonski biroi i kompanije koje uglavnom koriste kolorne štampače) i koji ne žele da razmišljaju da li će boje biti potpuno iste kao kod prvog tonera koji ste dobili uz kupljeni štampač, onda je izbor OEM (originalan) toner. Uz dodatak da će kupovina originalnih tonera uvek biti stvar za polemisanje zbog njihove cene.</p><br>
+							<p class="no-resp">Ukoliko imate svakodnevnu upotrebu štampe, pretežno crno belu štampu, onda će Vam najisplativije biti da se opredelite za kompatibilne ili for use tonere. Tu ne možete pogrešiti s obzirom da Zebracon doo sarađuje samo sa proverenim, renomiranim uvoznicima i kvalitet je zagarantovan. Uz dodatnu sigurnost u vidu garancije na sve laserske tonere od godinu dana.</p><br>
+							<p class="no-resp">Ako i dalje imate bilo kakve nedoumice, slobodno nas pozovite i naš iskusan tim će vam dati konkretne predloge i pouzdane informacije, koji će Vam pomoći u izboru najboljeg rešenja za Vašu kompaniju!</p>
 						</div>
-						<div class="space"></div>
-						<div class="border"></div>
-						<div class="both second-div">
+						<div class="space no-resp"></div>
+						<div class="border no-resp"></div>
+						<div class="both second-div no-resp">
 							<img src="img/oprema/potrosni-materijali/toneri.png">
 						</div>
 					</div>
@@ -353,27 +405,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -402,4 +454,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>
