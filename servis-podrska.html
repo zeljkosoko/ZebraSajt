@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -145,7 +197,7 @@
 			</div>
 			<div class="main-image-other-header">
 				<h1>Servis i podrška</h1>
-				<div class="line"></div>
+				<div class="line no-resp"></div>
 				<p>Servisno – tehnička podrška sa kojom Vaša investicija traje duže.</p>
 			</div>
 		</div>
@@ -156,16 +208,16 @@
 						<h2>Profesionalna servisna podrška</h2>
 					</div>
 					<div class="div-child-content">
-						<p>Kompanjia Zebracon doo sa svojim višegodišnjim iskustvom u servisiranju IT industrijske opreme stoji Vam na raspolaganju kako u preventivnom tako i u incidentnom održavanju Vaše opreme. Naša iskustva bazirana su na garantnom i na vangarantnom servisu termalnih štampača različitih proizvođača, PDA uređaja, linijsko matričnih štampača i mašina za kovertiranje.</p>
-						<div class="line"></div>
-						<p>U našem servisu koristimo orginalne delove ili suplemente visokog kvaliteta, a  naše stručno osoblje pobrinuće se da u što kraćem roku odgovori na Vaše zahteve.</p><br>
-						<p>Prednosti sistema u Zebracon-u:</p>
+						<p class="no-resp">Kompanjia Zebracon doo sa svojim višegodišnjim iskustvom u servisiranju IT industrijske opreme stoji Vam na raspolaganju kako u preventivnom tako i u incidentnom održavanju Vaše opreme. Naša iskustva bazirana su na garantnom i na vangarantnom servisu termalnih štampača različitih proizvođača, PDA uređaja, linijsko matričnih štampača i mašina za kovertiranje.</p>
+						<div class="line no-resp"></div>
+						<p class="line no-resp">U našem servisu koristimo orginalne delove ili suplemente visokog kvaliteta, a  naše stručno osoblje pobrinuće se da u što kraćem roku odgovori na Vaše zahteve.</p><br>
+						<p class="line no-resp">Prednosti sistema u Zebracon-u:</p>
 						<ul class="inside">
 							<li>Dijagnostifikovanje kvara u toku jednog radnog dana.</li>
 							<li>Servisiranje opreme u kratkom roku.</li>
 							<li>Veliki lager rezervnih delova za sve tipove opreme.</li>
-							<li>Garancija na delove i izvedene usluge.</li>
-							<li>Preko 15 godina servisnog iskustva.</li>
+							<li class="line no-resp">Garancija na delove i izvedene usluge.</li>
+							<li class="line no-resp">Preko 15 godina servisnog iskustva.</li>
 						</ul>
 					</div>
 					<img src="img/usluge/servis-podrska/slika1.jpg">
@@ -174,26 +226,26 @@
 					<div class="div-child-content">
 						<img src="img/usluge/servis-podrska/podrska.png">
 						<h3>Redovno održavanje opreme</h3>
-						<p class="lastP">Određena oprema, kao i Vaš automobil, zahteva redovno i preventivno održavanje. Zavisno od tipa opreme i repromaterijala koji se koriste, dinamike rada, zahtevnosti uslova i drugih karakterističnih parametara prelažemo optimalni interval u kome je preporučeno izvesti servisnu intervenciju.</p><br>
-						<p>Redovno održavanje podrazumeva osnovne servisne radnje: pregled, testiranje, kalibrisanje, čišćenje, setovanje radnih parametara i sl. Na taj način preventivno se deluje i predupređuje potencijali zastoj i na vreme se vrši dijagnoza stanja uređaja. Sve servisne radnje na svakom posebnom uređaju čuvaju se u servisnom kartonu.</p>
+						<p class="lastP no-resp">Određena oprema, kao i Vaš automobil, zahteva redovno i preventivno održavanje. Zavisno od tipa opreme i repromaterijala koji se koriste, dinamike rada, zahtevnosti uslova i drugih karakterističnih parametara prelažemo optimalni interval u kome je preporučeno izvesti servisnu intervenciju.</p><br>
+						<p class="line no-resp">Redovno održavanje podrazumeva osnovne servisne radnje: pregled, testiranje, kalibrisanje, čišćenje, setovanje radnih parametara i sl. Na taj način preventivno se deluje i predupređuje potencijali zastoj i na vreme se vrši dijagnoza stanja uređaja. Sve servisne radnje na svakom posebnom uređaju čuvaju se u servisnom kartonu.</p>
 						<img src="img/usluge/servis-podrska/ugovor.png">
 						<h3>SLA (Service Level Agreement) ugovori</h3>
-						<p class="lastP">SLA je ugovor o nivou pružanja podrške za uslugu i predstavlja način da se precizno i detaljno definišu sve tačke saradnje između Zebracon-a i naručioca usluge.</p><br>
-						<p class="lastP">SLA ugovore koncipiramo tako da što bolje ispratimo i podržimo naše klijente, pa obzirom na servisno – tehnički tim koji imamo u svojoj kompaniji u mogućnosti smo da imamo fleksibilan pristup svim bitnim aspektima saradnje:</p>
-						<ul class="inside">
+						<p class="lastP no-resp">SLA je ugovor o nivou pružanja podrške za uslugu i predstavlja način da se precizno i detaljno definišu sve tačke saradnje između Zebracon-a i naručioca usluge.</p><br>
+						<p class="lastP no-resp">SLA ugovore koncipiramo tako da što bolje ispratimo i podržimo naše klijente, pa obzirom na servisno – tehnički tim koji imamo u svojoj kompaniji u mogućnosti smo da imamo fleksibilan pristup svim bitnim aspektima saradnje:</p>
+						<ul class="inside no-resp">
 							<li>podrška telefonom ili online – daljinski</li>
 							<li>ticketing sistem prijave kvara i potvrde o prijemu</li>
 							<li>vreme izlaska servisera / programera na lokaciju korisnika</li>
-							<li>prioritetni izlasci na teren na teritoriji cele zemlje</li>
-							<li>vreme između dva uzastopna zastoja sistema</li>
-							<li>vreme potrebno za popravku sistema</li>
-							<li>vreme potrebno za njegovo vraćanje u produkciju</li>
-							<li>upgrade sistema i ažuriranje softvera</li>
-							<li>mogućnost obezbeđenja back-up opreme</li>
+							<li class="line no-resp">prioritetni izlasci na teren na teritoriji cele zemlje</li>
+							<li class="line no-resp">vreme između dva uzastopna zastoja sistema</li>
+							<li class="line no-resp">vreme potrebno za popravku sistema</li>
+							<li class="line no-resp">vreme potrebno za njegovo vraćanje u produkciju</li>
+							<li class="line no-resp">upgrade sistema i ažuriranje softvera</li>
+							<li class="line no-resp">mogućnost obezbeđenja back-up opreme</li>
 						</ul><br>
-						<p class="lastP">Svi ovi unapred definisani parametri saradnje mogu se dopuniti sa specifičnim zahtevima i prilaogiti se klijentu tako da isti može biti siguran i osiguran da će nivo pružanja podrške za uslugu koja im je isporučena biti u skladu s njihovim realnim potrebama.</p>
+						<p class="lastP no-resp">Svi ovi unapred definisani parametri saradnje mogu se dopuniti sa specifičnim zahtevima i prilaogiti se klijentu tako da isti može biti siguran i osiguran da će nivo pružanja podrške za uslugu koja im je isporučena biti u skladu s njihovim realnim potrebama.</p>
 					</div>
-					<div class="div-child-header without-background">
+					<div class="div-child-header without-background no-resp">
 						<h2>Načini servisiranja</h2>
 						<img src="img/usluge/servis-podrska/servis.png">
 					</div>
@@ -232,35 +284,35 @@
 				</div>
 			</div>
 			<div class="function-description function-description-footer function-description-footer-servis-podrska">
-				<a href="barkod-stampaci.html"><img class="pecat-footer" src="img/usluge/servis-podrska/barkod-stampaci-pecat.png"></a>
-				<a href="linijsko-matricni-stampaci.html"><img class="pecat-footer" src="img/usluge/servis-podrska/matricni-stampaci-pecat.png"></a>
-				<a href="masine-za-kovertiranje.html"><img class="pecat-footer" src="img/usluge/servis-podrska/kovertirke-pecat.png"></a>
+				<a class="no-resp" href="barkod-stampaci.html"><img class="pecat-footer" src="img/usluge/servis-podrska/barkod-stampaci-pecat.png"></a>
+				<a class="no-resp" href="linijsko-matricni-stampaci.html"><img class="pecat-footer" src="img/usluge/servis-podrska/matricni-stampaci-pecat.png"></a>
+				<a class="no-resp" href="masine-za-kovertiranje.html"><img class="pecat-footer" src="img/usluge/servis-podrska/kovertirke-pecat.png"></a>
 			</div>
 		</div>
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -289,4 +341,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>
