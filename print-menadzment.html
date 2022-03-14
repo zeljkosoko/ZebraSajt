@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -145,8 +197,9 @@
 			</div>
 			<div class="main-image-other-header">
 				<h1>Print menadžment</h1>
-				<div class="line"></div>
-				<p>Napredno upravljanje resursima za štampu kao dodatna asistencija u vašem poslovanju.</p>
+				<div class="line no-resp"></div>
+				<p class="no-resp">Napredno upravljanje resursima za štampu kao dodatna asistencija u vašem poslovanju.</p>
+				<p>Napredno upravljanje resursima za štampu</p>
 			</div>
 		</div>
 		<div class="content-other">
@@ -156,13 +209,13 @@
 						<h2>Dizajn sistema za štampu</h2>
 					</div>
 					<div class="div-child-content">
-						<p>Pružamo ekspertizu, koja uključuje niz pojedinačnih usluga i operacija, na bazi partnerstva i po meri svakog klijenta.</p>
-						<div class="line"></div>
+						<p class="no-resp">Pružamo ekspertizu, koja uključuje niz pojedinačnih usluga i operacija, na bazi partnerstva i po meri svakog klijenta.</p>
+						<div class="line no-resp"></div>
 						<ul>
 							<li>Određivanje specifičnih potreba klijenta.</li>
 							<li>Analiza i procena uštede primenom rešenja.</li>
 							<li>Konsultovanje i izbor primerenog -adekvatnog paketa usluge.</li>
-							<li>Adekvatan izbor tehnike i opreme u zavisnosti od delatnosti i obima poslovanja.</li>
+							<li class="no-resp">Adekvatan izbor tehnike i opreme u zavisnosti od delatnosti i obima poslovanja.</li>
 						</ul>
 					</div>
 					<img src="img/usluge/print-menadzment/slika1.jpg">
@@ -171,21 +224,21 @@
 					<div class="div-child-content">
 						<img src="img/usluge/print-menadzment/investicije.png">
 						<h3>Eliminisanje početnih investicija</h3>
-						<p>Početna ulaganja značajnih sredstava u hardversku opremu zahteva veliku troškovnu opravdanost i dodatno vreme upravljanja. Odabirom print menadžement rešenja krajnji korisnik nema velika početna ulaganja, već u okviru paketa poslovanja samo plaća potrošni materijal koji i koristi.</p>
+						<p class="no-resp">Početna ulaganja značajnih sredstava u hardversku opremu zahteva veliku troškovnu opravdanost i dodatno vreme upravljanja. Odabirom print menadžement rešenja krajnji korisnik nema velika početna ulaganja, već u okviru paketa poslovanja samo plaća potrošni materijal koji i koristi.</p>
 						<img src="img/usluge/print-menadzment/troskovi.png">
 						<h3>Budžet i upravljanje troškovima</h3>
-						<p>Korišćenjem print menadžment rešenja naši Klijenti imaju preciznu i tačnu informaciju o ukupnim troškovima na mesečnom nivou. Kako obim poslovanja varira, mesečni troškovi su određeni brojem utrošenih materijala. Ne postoje nepredviđeni troškovi za nabavku novih uređaja kao ni neočekivani troškovi popravke uređaja. U okviru ugovorenog perioda trajanja paketa Klijent nema dodatnih nepredviđenih troškova.</p>
+						<p class="no-resp">Korišćenjem print menadžment rešenja naši Klijenti imaju preciznu i tačnu informaciju o ukupnim troškovima na mesečnom nivou. Kako obim poslovanja varira, mesečni troškovi su određeni brojem utrošenih materijala. Ne postoje nepredviđeni troškovi za nabavku novih uređaja kao ni neočekivani troškovi popravke uređaja. U okviru ugovorenog perioda trajanja paketa Klijent nema dodatnih nepredviđenih troškova.</p>
 						<img src="img/usluge/print-menadzment/stampa.png">
 						<h3>Kvalitet štampe</h3>
-						<p>Upravljanje kvalitetom štampe zahteva konstantnu kontrolu uređaja koji mogu negativno svojim nepravilnim radom da utiču na kvalitet odštampanih bar-kod nalepnica. Ovo uključuje i kontrolu delova kao što su printhead, print engine, riboni, kvalitet lepka i materijal nalepnica. Ukoliko neki od navedenih delova nije ispravan, može doći do značajnog kašnjenja tokom izdavanja robe ili prilikom obeležavanja gotovih proizvoda. U okviru print menadžmenta Zebracon preuzima odgovornost za ispravnost svih delova uređaja i na ovaj način oslobađa krajnjeg korisnika od dodatnih obaveza u okviru procesa štampe.</p>
+						<p class="no-resp">Upravljanje kvalitetom štampe zahteva konstantnu kontrolu uređaja koji mogu negativno svojim nepravilnim radom da utiču na kvalitet odštampanih bar-kod nalepnica. Ovo uključuje i kontrolu delova kao što su printhead, print engine, riboni, kvalitet lepka i materijal nalepnica. Ukoliko neki od navedenih delova nije ispravan, može doći do značajnog kašnjenja tokom izdavanja robe ili prilikom obeležavanja gotovih proizvoda. U okviru print menadžmenta Zebracon preuzima odgovornost za ispravnost svih delova uređaja i na ovaj način oslobađa krajnjeg korisnika od dodatnih obaveza u okviru procesa štampe.</p>
 						<img src="img/usluge/print-menadzment/nalepnice.png">
 						<h3>Upravljanje različitim nalepnicama</h3>
-						<p>Današnje industrijsko okruženje često karakteriše upotreba većeg broja različitih nalepnica od više dobavljača, kako bi se ispunili različiti zahtevi u pogledu temperature, trajnosti štampe, materijala nalepnica i kvaliteta lepka. Zebracon Vam nudi zaokruženo rešenje koje ispunjava različite zahteve u okviru jedne mesečne naknade - paketa usluga, koji ne zahteva dodatno vreme angažovanja Vaših zaposlenih.</p>
+						<p class="no-resp">Današnje industrijsko okruženje često karakteriše upotreba većeg broja različitih nalepnica od više dobavljača, kako bi se ispunili različiti zahtevi u pogledu temperature, trajnosti štampe, materijala nalepnica i kvaliteta lepka. Zebracon Vam nudi zaokruženo rešenje koje ispunjava različite zahteve u okviru jedne mesečne naknade - paketa usluga, koji ne zahteva dodatno vreme angažovanja Vaših zaposlenih.</p>
 						<img src="img/usluge/print-menadzment/sistem.png">
 						<h3>Tehnička podrška i ažuriranje sistema</h3>
-						<p class="lastP">Kroz print menadžment rešenje Zebracon Vam obezbeđuje redovno ažuriranje softvera i kompletnog hardvera u okviru sistema za industrijsku štampu. Vaši zaposleni imaju jednog dobavljača na koga se mogu osloniti za kompletnu podršku u okviru paketa.</p>
+						<p class="lastP no-resp">Kroz print menadžment rešenje Zebracon Vam obezbeđuje redovno ažuriranje softvera i kompletnog hardvera u okviru sistema za industrijsku štampu. Vaši zaposleni imaju jednog dobavljača na koga se mogu osloniti za kompletnu podršku u okviru paketa.</p>
 					</div>
-					<div class="div-child-header without-background">
+					<div class="div-child-header without-background no-resp">
 						<h2>Prednosti primene rešenja</h2>
 						<img src="img/usluge/print-menadzment/stampac.png">
 					</div>
@@ -195,12 +248,12 @@
 						<h2>Stalno praćenje i ažuriranje sistema štampe</h2>
 					</div>
 					<div class="div-child-content">
-						<p>Kontinuiranim prisustvom u procesima korisnika, svaki novi zadatak je šansa da se sistem unapredi i umanji njegova nesavršenost razvojem posebnih alata i novih usluga.</p>
-						<div class="line"></div>
+						<p class="no-resp">Kontinuiranim prisustvom u procesima korisnika, svaki novi zadatak je šansa da se sistem unapredi i umanji njegova nesavršenost razvojem posebnih alata i novih usluga.</p>
+						<div class="line no-resp"></div>
 						<ul>
 							<li>Proaktivno centralizovano upravljanje sistemom štampe.</li>
-							<li>Aplikativna rešenja za automatizaciju procesa obeležavanje robe.</li>
-							<li>Zamenska oprema na lokaciji korisnika i Dodatna oprema u procesu štampe – motalice, sekači, verifikatori, i sl.</li>
+							<li class="no-resp">Aplikativna rešenja za automatizaciju procesa obeležavanje robe.</li>
+							<li class="no-resp">Zamenska oprema na lokaciji korisnika i Dodatna oprema u procesu štampe – motalice, sekači, verifikatori, i sl.</li>
 							<li>Održavanje opreme i tehnička podrška.</li>
 							<li>Ustupanje softverskih licenci kompanije NiceLabel.</li>
 						</ul>
@@ -216,27 +269,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -265,4 +318,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>

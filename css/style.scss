@@ -2217,6 +2217,9 @@
       .div-child.odd.flex.div-child-except {
         width: 75%;
         .div-child-content {
+          h3{
+            margin-bottom: 25px;
+          }
           .lastP {
             margin-top: 0px;
           }
@@ -2229,6 +2232,11 @@
         }
       }
       .div-child.even.flex.div-child-other {
+        .div-child-header {
+          h2{
+            border: none;
+          }
+        }
         .nicelabel-gif {
           top: 104px;
           width: 100%;
@@ -2241,6 +2249,7 @@
     .function-description.function-description-footer.function-description-footer-nicelabel {
       border: 0px;
       padding-bottom: 60px;
+      padding-top: 100px;
       background-image: none;
       a {
         display: block;
@@ -2632,6 +2641,10 @@
       }
     }
    }
+
+ /*print menadzment*/
+
+
 } //media screen end
  
 
