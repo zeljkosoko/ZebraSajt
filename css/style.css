@@ -2634,5 +2634,9 @@ footer .footer-copyright p {
     margin-top: -30px;
   }
   /*print menadzment*/
+  /*usluzno deklarisanje*/
+  .function-description.function-description-footer.function-description-footer-deklarisanje {
+    border: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

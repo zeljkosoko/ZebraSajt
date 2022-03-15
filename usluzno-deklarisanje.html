@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -145,7 +197,7 @@
 			</div>
 			<div class="main-image-other-header">
 				<h1>Uslužno deklarisanje</h1>
-				<div class="line"></div>
+				<div class="line no-resp"></div>
 				<p>Vršimo štampu svih vrsta deklaracija i nalepnica za obeležavanje.</p>
 			</div>
 		</div>
@@ -156,9 +208,9 @@
 						<h2>Profesionalna štampa</h2>
 					</div>
 					<div class="div-child-content">
-						<p>U zavisnosti od potreba, štampu vršimo na papirnatim i polipropilenskim nalepnicama visokog kvaliteta, različitih dimenzija.
+						<p class="no-resp">U zavisnosti od potreba, štampu vršimo na papirnatim i polipropilenskim nalepnicama visokog kvaliteta, različitih dimenzija.
 						</p>
-						<div class="line"></div>
+						<div class="line no-resp"></div>
 						<p>Kvalitetan otisak štampe omogućavaju štampači renomiranih proizvođača:</p>
 						<ul>
 							<li>Zebra</li>
@@ -173,12 +225,12 @@
 					<div class="div-child-content">
 						<img src="img/usluge/print-menadzment/investicije.png">
 						<h3>Štampa deklaracija</h3>
-						<p>Štampamo sve vrste deklaracija na potrebnim veličinama, sa neophodnim i jasno obeleženim podacima u skladu sa zakonskim propisima- Brzo i pouzdano.</p>
+						<p class="no-resp">Štampamo sve vrste deklaracija na potrebnim veličinama, sa neophodnim i jasno obeleženim podacima u skladu sa zakonskim propisima- Brzo i pouzdano.</p>
 						<img src="img/usluge/print-menadzment/troskovi.png">
 						<h3>Štampa nalepnica za obeležavanje</h3>
-						<p class="lastP">Štampamo sve vrste nalepnica kojima se obeležavaju roba, repromaterijali, proizvodi. Vršimo štampu lokaciskih nalepnica za regale u magacinu koje se štampaju na polipropilenskim nalepnicama koje su dugotrajnije i otpornije na sve uslove. Kvalitet štampe garantuje sigurnu čitljivost barkodova.</p>
+						<p class="lastP no-resp">Štampamo sve vrste nalepnica kojima se obeležavaju roba, repromaterijali, proizvodi. Vršimo štampu lokaciskih nalepnica za regale u magacinu koje se štampaju na polipropilenskim nalepnicama koje su dugotrajnije i otpornije na sve uslove. Kvalitet štampe garantuje sigurnu čitljivost barkodova.</p>
 					</div>
-					<div class="div-child-header without-background">
+					<div class="div-child-header without-background no-resp">
 						<h2>Kvalitetna štampa</h2>
 						<img src="img/usluge/deklarisanje/rolna.png">
 					</div>
@@ -192,27 +244,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -241,4 +293,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>
