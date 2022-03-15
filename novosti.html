@@ -23,6 +23,8 @@
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<!--icon-->
 		<link rel="icon" type="image/png" href="img/index.png">
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
@@ -101,6 +103,56 @@
 					</div>
 				</div>
 			</div>
+			<!-- Top Navigation Menu -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" class="logoLink">
+					<img class="responsiveLogo" src="img/icon.png">
+				</a>
+				
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent1()">Rešenja
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content1">
+						<a href="magacinsko-poslovanje.html">Magacinsko poslovanje</a>
+						<a href="pracenje-proizvodnje.html">Praćenje proizvodnje</a>
+						<a href="automatizacija.html">Automatizacija</a>
+						<a href="nicelabel.html">NiceLabel softver</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent2()">Oprema
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content2">
+						<a href="barkod-stampaci.html">Bar-kod štampači</a>
+						<a href="tiket-stampaci.html">Tiket štampači</a>
+						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
+						<a href="rucni-terminali.html">Ručni terminali</a>
+						<a href="barkod-skeneri.html">Bar-kod skeneri</a>
+						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
+						<a href="kancelarijski-materijal.html">Kancelarijski materijal</a>
+						<a href="potrosni-materijali.html">Potrošni materijali</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn" onclick="displayContent3()">Usluge
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content3">
+						<a href="print-menadzment.html">Print menadžment</a>
+						<a href="servis-podrska.html">Servis i podrška</a>
+						<a href="usluzno-deklarisanje.html">Uslužno deklarisanje</a>
+					</div>
+				</div>
+				<a href="novosti.html">Novosti</a>
+				<a href="kontakt.php">Kontakt</a>
+				
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
 		</header>
 		<div class="more-options">
 			<ul>
@@ -150,7 +202,7 @@
 		<div class="content content-background-image-news">
 			<div class="third news-third">
 				<div class="grupa-novosti flex">
-					<div class="novost">
+					<div class="novost novost1">
 						<img src="img/novosti/tranzicija.jpg">
 						<p class="time">16. Decembar 2017</p>
 						<h2>Izvršena uspešna tranzicija na nove verzije standarda ISO 9001:2015 i 14001:2015!</h2>
@@ -168,31 +220,31 @@
 						<h2>Implementacija bar-kod štampe na PRINTRONIX linijsko matričnim štampačima u kompaniji Farmalogist.</h2>
 						<p>Kompanija Farmalogist je savremena veleprodaja sa distributivnim centrima u Beogradu, Nišu, Kraljevu i Novom Sadu. Skladišni kapaciteti imaju više od 9.500 m2...</p>
 					</div>
-					<div class="novost">
+					<div class="novost no-resp">
 						<img src="img/novosti/atlantic.jpg">
 						<p class="time">23. Jun 2017</p>
 						<h2>Implementacija bar-kod štampe na PRINTRONIX linijsko matričnim štampačima u kompaniji Atlantic.</h2>
 						<p>Atlantic Grupa je multinacionalna kompanija koja u svojem poslovanju objedinjuje proizvodnju, razvoj, prodaju i distribuciju robe široke potrošnje...</p>
 					</div>
-					<div class="novost">
+					<div class="novost no-resp">
 						<img src="img/novosti/west.jpg">
 						<p class="time">26. April 2017</p>
 						<h2>Saradnja sa kompanijom West Pharmaceutical Services u oblasti termo štampe.</h2>
 						<p>Američka kompanija West Pharmaceutical Services je vodeća svetska kompanija u razvoju komponenata farmaceutske ambalaže, sa preko 50 godina iskustva u radu...</p>
 					</div>
-					<div class="novost">
+					<div class="novost no-resp">
 						<img src="img/novosti/sertifikat.jpg">
 						<p class="time">2. Decembar 2016</p>
 						<h2>Uspešna sertifikacija IMS sistema u kompaniji Zebracon doo.</h2>
 						<p>U želji da unapredimo poslovanje i zadovoljimo potrebe naših korisnika, doneli smo stratešku odluku o uvođenju i sertifikaciji integrisanog sistema menadžmenta...</p>
 					</div>
-					<div class="novost">
+					<div class="novost no-resp">
 						<img src="img/novosti/polipak.jpg">
 						<p class="time">5. Maj 2016</p>
 						<h2>Uspešno izvršena implementacija sistema za praćenje proizvodnje – Easy MES, u kompaniji Polipak.</h2>
 						<p>Porastom proizvodnih kapaciteta, kompanija Polipak koja se dugi niz godina bavi proizvodnjom polietilenske ambalaže i papirne galanterije se u svom poslovanju suočila sa nekoliko problema...</p>
 					</div>
-					<div class="novost">
+					<div class="novost no-resp">
 						<img src="img/novosti/milsped.jpg">
 						<p class="time">11. Mart 2016</p>
 						<h2>Nastavljena višegodišnja saradnja sa kompanijom Milšped u oblasti print menadžmenta termo printera.</h2>
@@ -204,27 +256,27 @@
 		<footer>
 			<div class="footer-information">
 				<div class="footer-information-width flex">
-					<div>
+					<div class="no-resp">
 						<h6>Informatizacija</h6>
 						<span></span>
 						<a href="pracenje-proizvodnje.html">Upravljanje proizvodnjom</a>
 						<a href="magacinsko-poslovanje.html">Upravljanje skladištem</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Automatizacija</h6>
 						<span></span>
 						<a href="automatizacija.html">Automatsko deklarisanje</a>
 						<a href="nicelabel.html">NiceLabel rešenje</a>
 						<a href="print-menadzment.html">Print menadžment</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Oprema</h6>
 						<span></span>
 						<a href="masine-za-kovertiranje.html">Mašine za kovertiranje</a>
 						<a href="tiket-stampaci.html">Tiket štampači</a>
 						<a href="linijsko-matricni-stampaci.html">Linijsko matrični štampači</a>
 					</div>
-					<div>
+					<div class="no-resp">
 						<h6>Auto-ID</h6>
 						<span></span>
 						<a href="barkod-stampaci.html">Bar-kod štampači</a>
@@ -253,4 +305,5 @@
    			<div class="loader-section section-right"></div>
 		</div>
 	</body>
+	<script src="js/main.js"></script>
 </html>

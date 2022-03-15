@@ -2651,7 +2651,20 @@
   .function-description.function-description-footer.function-description-footer-deklarisanje{
     border: none;
   }
-
+  /*novosti*/
+  .content.content-background-image-news{
+    .third.news-third{
+      .grupa-novosti.flex{
+        .novost1{
+          img {
+            width: 260px;
+            margin: 0 40px;
+          }
+        }
+      }
+    }
+    
+  }
 } //media screen end
  
 
