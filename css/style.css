@@ -2647,5 +2647,50 @@ footer .footer-copyright p {
     width: 260px;
     margin: 0 40px;
   }
+  /*kontakt*/
+  .loaded {
+    width: 100%;
+  }
+  .loaded .i4ewOd-pzNkMb-tJHJj {
+    display: none;
+  }
+  .loaded footer .background {
+    display: none;
+  }
+  .loaded .main-image-contact {
+    min-height: 65vh;
+  }
+  .loaded .main-image-contact .iframeZebra {
+    height: 65vh;
+    margin-top: 30px;
+    padding-top: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .loaded .main-image-contact .iframeZebra html {
+    margin-top: -53px;
+  }
+  .loaded .main-image-contact .iframeZebra html body .c4YZDc.HzV7m-b7CEbf.SfQLQb-dIxMhd-bN97Pc-b3rLgd.neVct-IlgHgd.ab1wFe {
+    margin-top: -53px;
+  }
+  .loaded .content-contact .contact-width.flex {
+    padding: 40px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .loaded .content-contact .contact-width.flex .form #contactUs {
+    display: none;
+  }
+  .loaded .content-contact .contact-width.flex .about {
+    margin-bottom: 40px;
+  }
+  .loaded .content-contact .contact-width.flex .about span.line {
+    display: none;
+  }
+  .loaded .content-contact .contact-width.flex .about a img {
+    padding-top: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
