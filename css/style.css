@@ -1959,15 +1959,8 @@ footer .footer-copyright p {
   color: #262626;
 }
 
-.responsiveLogo {
-  display: none;
-}
-
-.topnav {
-  display: none;
-}
-
-.just-responsive {
+/*iskljucivanje na desktopu*/
+.responsiveLogo, .topnav, .just-responsive, .partners2, .div-child-content2 {
   display: none;
 }
 

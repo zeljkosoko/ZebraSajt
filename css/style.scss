@@ -1908,16 +1908,12 @@
       }
     }
   }
-  .responsiveLogo{
+  /*iskljucivanje na desktopu*/
+  .responsiveLogo,.topnav,.just-responsive,.partners2,.div-child-content2
+  {
       display: none;
   }
 
- .topnav{
-  display: none;
- }
- .just-responsive {
-  display: none;
- }
   /* ---------- end footer ---------- */
   
   /* -------------------- end body -------------------- */
