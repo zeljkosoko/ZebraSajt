@@ -1908,19 +1908,16 @@
       }
     }
   }
+  /* ---------- end footer ---------- */
   /*iskljucivanje na desktopu*/
   .responsiveLogo,.topnav,.just-responsive,.partners2,.div-child-content2
   {
       display: none;
   }
-
-  /* ---------- end footer ---------- */
-  
   /* -------------------- end body -------------------- */
- @media screen and (max-width:400px){
-
+ @media screen and (max-width:1440px) and (min-width:1050px){
     header {
-          width: 390px;
+          width: 100%;
           .header-background.flex {
             display: none;
           }
@@ -1932,15 +1929,15 @@
             }
             .logoLink{
               display: block;
-              width: 60px;
-              height: 60px;
+              width: 80px;
+              height: 80px;
               top: 10px;
               left: 10px;
               position: relative;
               .responsiveLogo{
                 position: absolute;
                 display: block;
-                width: 50px;
+                width: 80px;
                 }
               }
             .dropdown .dropbtn {
@@ -1949,9 +1946,9 @@
             a.icon {
               display: block;
               position: absolute;
-              font-size: 40px;
-              top: 0;
-              right: 10px;
+              font-size: 70px;
+              top: -14px;
+              right: 20px;
             }
 
           } //topnav end
@@ -1961,8 +1958,8 @@
             background-color: #333;
             .logoLink{
               display: block;
-              width: 60px;
-              height: 60px;
+              width: 80px;
+              height: 80px;
               position: relative;
               top: 10px;
               left:10px;
@@ -1970,13 +1967,13 @@
               .responsiveLogo{
                 position: absolute;
                 display: block;
-                width: 50px;
+                width: 80px;
                 }
             }
             a.icon {
               display: block;
               position: absolute;
-              font-size: 40px;
+              font-size: 70px;
               color: #23527c;
               padding: 0px 0px;
             }
@@ -2026,7 +2023,10 @@
         width: 100%;
         .item, .item-active{
           .overlay.animated.fadeInDownBig {
-            margin-left: -78px;
+            margin-left: -80px;
+            img{
+              object-fit: none;
+            }
           }
           .carousel-caption {
             padding: 0px 30px;
@@ -2050,10 +2050,11 @@
          display: none;
        }
        p.zebraInfo{
+         min-width: 80%;
          display: block;
          font-size: 1em;
          text-align: justify;
-         padding: 0 20px;
+         padding: 0 40px;
        }
       }
      .second{
@@ -2063,10 +2064,10 @@
        padding-top: 44px;
        .grupa-novosti {
         .novost {
-          width: 340px;
+          width: 35%;
           margin-bottom: 44px;
           img {
-            width: 340px;
+            width: 100%;
           }
           h2{
             padding-bottom: 20px;
@@ -2089,8 +2090,9 @@
          float: left;
          text-align: center;
          a {
+           width: 20%;
            img {
-            width: 150px;
+            width: 100%;
            }
          }
        }
@@ -2129,6 +2131,7 @@
       width: 100%;
     }
     .main-image-other-header {
+      min-width: 100%;
       background-color: rgba(255, 255, 255, 0.77);
       box-shadow: 0 0 20px #262626;
       top: 230px;
@@ -2140,26 +2143,80 @@
       }
     }
   }
+
+  /*magacinsko i nicelabel i print menadzment*/
   .content-other {
     padding-top: 0%;
     margin-top: 102px;
     .function-description.flex-align{
+      width: 100%;
 
       .div-child.even.flex.div-child-other{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: -104px;
+        margin-bottom: 140px;
+        .backImg{
+          min-width: 100%;
+          left: 0px;
+        }
+        .printMenadz1{
+          width: 100%;
+        }
         .div-child-header {
           h2{
+            border: none;
+            font-size: 23px;
+          }
+          h3{
             font-size: 22px;
             text-align: center;
+          }
+        }
+        .div-child-header.without-background{
+          display: flex;
+          flex-direction: column;
+          margin-top: 50px;
+          width: 100%;
+          h2{
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 25px;
+          }
+          .just-responsive {
+            display: block;
+            width: 300px;
+            margin-top: 35px;
+          }
+        }
+        .div-child-content2 {
+          display: block;
+          width: 85%;
+          margin:70px 0 0 0;
+          padding-bottom: 55px;
+          transform: rotate(-1deg);
+          ul {
+            list-style-image: url(../img/check.png);
+            li{
+              font-size: 18px;
+            }
           }
         }
       }
       .div-child.odd.flex.div-child-except{
         flex-direction: column;
-        width: 293px;
-
+        width: 50%;
+        margin-left: 20px;
+        margin-bottom: 282px;
+       
         .div-child-content{
           img {
             width: 40px;
+          }
+          .printMenadz1{
+            width: 100%;
           }
           padding: 25px 25px;
           h3{
@@ -2178,86 +2235,82 @@
         }
  
       }
-      .div-child.even.flex.div-child-other{
+    }
+    .function-description.function-description-footer.function-description-footer-nicelabel
+      {
+      border: none;
+      padding: 24px 0 80px 0;
+      a{
+        display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: -104px;
-        margin-bottom: 110px;
-        .div-child-header.without-background{
-          
-          .just-responsive {
-            display: block;
-            width: 70%;
-            margin-top: 35px;
-          }
-        }
-        .div-child-content2 {
-          display: block;
-          width: 70%;
-          margin:30px 0;
-          padding-bottom: 55px;
-          transform: rotate(-1deg);
-          ul {
-            list-style-image: url(../img/check.png);
-          }
-        }
+          justify-content: center;
+      }
+    }//end footer
+    .function-description.function-description-footer.function-description-footer-menadzment{
+      border: none;
+      display: flex;
+      justify-content: center;
+      padding: 24px 0 80px 0;
+      a{
+        display: flex;
+        flex-wrap: wrap;
+          justify-content: center;
       }
     }
-  
   }
 
   /*nicelabel*/
-  .content-other{ 
-    .function-description.flex-align {
-      margin-bottom: -155px;
-      .div-child.odd.flex.div-child-except {
-        width: 75%;
-        .div-child-content {
-          h3{
-            margin-bottom: 25px;
-          }
-          .lastP {
-            margin-top: 0px;
-          }
-        }
-        .div-child-header.without-background {
-          text-align:right;
-          img {
-            width: 60%;
-          }
-        }
-      }
-      .div-child.even.flex.div-child-other {
-        .div-child-header {
-          h2{
-            border: none;
-          }
-        }
-        .nicelabel-gif {
-          top: 104px;
-          width: 100%;
-          left: 0px;
-          height: 840px;
-          object-fit: cover;
-        }
-      }
-    }
-    .function-description.function-description-footer.function-description-footer-nicelabel {
-      border: 0px;
-      padding-bottom: 60px;
-      padding-top: 100px;
-      background-image: none;
-      a {
-        display: block;
-        margin-top: -18px;
-        img{
-          width: 100%;
-          height: 70px;
-          margin: 0px;
-        }
-      }
-    }
-  }
+  // .content-other{ 
+  //   .function-description.flex-align {
+  //     margin-bottom: -155px;
+  //     .div-child.odd.flex.div-child-except {
+  //       width: 75%;
+  //       .div-child-content {
+  //         h3{
+  //           margin-bottom: 25px;
+  //         }
+  //         .lastP {
+  //           margin-top: 0px;
+  //         }
+  //       }
+  //       .div-child-header.without-background {
+  //         text-align:right;
+  //         img {
+  //           width: 60%;
+  //         }
+  //       }
+  //     }
+  //     .div-child.even.flex.div-child-other {
+  //       .div-child-header {
+  //         h2{
+  //           border: none;
+  //         }
+  //       }
+  //       .nicelabel-gif {
+  //         top: 104px;
+  //         width: 100%;
+  //         left: 0px;
+  //         height: 840px;
+  //         object-fit: cover;
+  //       }
+  //     }
+  //   }
+  //   .function-description.function-description-footer.function-description-footer-nicelabel {
+  //     border: 0px;
+  //     padding-bottom: 60px;
+  //     padding-top: 100px;
+  //     background-image: none;
+  //     a {
+  //       display: block;
+  //       margin-top: -18px;
+  //       img{
+  //         width: 100%;
+  //         height: 70px;
+  //         margin: 0px;
+  //       }
+  //     }
+  //   }
+  // }
 
   /*barkod stampaci*/
   .main-image {
@@ -2267,7 +2320,6 @@
       }
     }  
   }
-
   .content.content-background-image-barkod-stampaci {
     .function-description {
       .function-description-width.function-description-header {
@@ -2292,11 +2344,16 @@
       }
     }
     .printer1,.printer2,.printer3,.printer4,.printer5,.printer6,.printer7,.printer8{
+      width: 100%;
       padding-bottom: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
       .function-description-width {
         .width-flex.flex {
           .both.first-div{
-            margin: 0 30px 0 40px;
+            padding: 0 30px;
+            width: 100%;
+            margin-right: 0px;
             ul {
               margin-bottom: 0;
               li {
@@ -2304,13 +2361,13 @@
               }
             }
             .flex.pecati {
-              justify-content: center;
+              
               margin-top: -30px;
             }
           }
         }
       }
-    }
+    }//end printer
   }
 
   /*tiket stampaci*/
@@ -2338,11 +2395,16 @@
       }
     }
     .printer1,.printer2,.printer3 {
+      width: 100%;
       padding-bottom: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
       .function-description-width {
         .width-flex.flex {
           .both.first-div{
-            margin: 0 30px 0 40px;
+            padding: 0 30px;
+            width: 100%;
+            margin-right: 0px;
             ul {
               margin-bottom: 0;
               li {
@@ -2350,13 +2412,13 @@
               }
             }
             .flex.pecati {
-              justify-content: center;
+              
               margin-top: -30px;
             }
           }
         }
       }
-    }
+    }//end printer
   }
 
   /*linijsko matricni*/
@@ -2364,6 +2426,7 @@
     .function-description {
       .function-description-width.function-description-header {
         margin: 0px;
+        padding: 0 20px;
         .margin.last-div {
           display: flex;
           flex-direction: column;
@@ -2387,12 +2450,16 @@
     }
 
     .printer1,.printer2,.printer3,.printer4 {
+      width: 100%;
       padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
       .function-description-width {
         .width-flex.flex {
           .both.first-div{
-            width: 40%;
-            margin: 0 0 0 40px;
+            padding: 0 40px;
+            width: 100%;
+            margin-right: 0px;
             ul {
               margin-bottom: 0;
               li {
@@ -2400,21 +2467,12 @@
               }
             }
             .flex.pecati {
-              justify-content: center;
               margin-top: -30px;
-            }
-          }
-          .both.second-div{
-            width: 60%;
-            margin-left: 0;
-            img{
-              width: 100%;
-              padding-right: 10px;
             }
           }
         }
       }
-    }
+    }//end printer
   }
 
   /*rucni terminali*/
@@ -2422,7 +2480,8 @@
     .function-description {
       .function-description-width.function-description-header {
         margin: 0px;
-        .margin {
+        padding: 0 20px;
+        .margin.last-div {
           display: flex;
           flex-direction: column;
           h2 {
@@ -2430,23 +2489,30 @@
             margin-bottom: 0px;
           }
           .image-flex.flex {
-            flex-wrap: wrap;
-            justify-content: space-around;
-            div {
-              margin: 0px;
-              padding: 10px 10px;
-            }
+            .except-image{
+              width: 100%;
+              margin: 0;
+              img {
+                width: 100%;
+                padding: 10px 20px;
+              }
             }
           }
         }
 
       }
+    }
       .printer1,.printer2,.printer3,.printer4,.printer5,.printer6,.printer7,.printer8{
+        width: 100%;
         padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
         .function-description-width {
           .width-flex.flex {
             .both.first-div{
-              margin: 0 30px 0 40px;
+              padding: 0 40px;
+              width: 100%;
+              margin-right: 0px;
               ul {
                 margin-bottom: 0;
                 li {
@@ -2454,13 +2520,12 @@
                 }
               }
               .flex.pecati {
-                justify-content: center;
                 margin-top: -30px;
               }
             }
           }
         }
-      }
+      }//end printer
     }
   
   /*barkod skeneri*/
@@ -2468,7 +2533,8 @@
     .function-description {
       .function-description-width.function-description-header {
         margin: 0px;
-        .margin {
+        padding: 0 20px;
+        .margin.last-div {
           display: flex;
           flex-direction: column;
           h2 {
@@ -2476,23 +2542,30 @@
             margin-bottom: 0px;
           }
           .image-flex.flex {
-            flex-wrap: wrap;
-            justify-content: space-around;
-            div {
-              margin: 0px;
-              padding: 10px 10px;
-            }
+            .except-image{
+              width: 100%;
+              margin: 0;
+              img {
+                width: 100%;
+                padding: 10px 20px;
+              }
             }
           }
         }
 
       }
+    }
     .scaner1,.scaner2,.scaner3,.scaner4{
+      width: 100%;
       padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
       .function-description-width {
         .width-flex.flex {
           .both.first-div{
-            margin: 0 30px 0 40px;
+            padding: 0 40px;
+            width: 100%;
+            margin-right: 0px;
             ul {
               margin-bottom: 0;
               li {
@@ -2500,13 +2573,12 @@
               }
             }
             .flex.pecati {
-              justify-content: center;
               margin-top: -30px;
             }
           }
         }
       }
-    }
+    }//end skener
   }
   
   /*masine za kovertiranje*/
@@ -2514,7 +2586,8 @@
     .function-description {
       .function-description-width.function-description-header {
         margin: 0px;
-        .margin {
+        padding: 0 20px;
+        .margin.last-div {
           display: flex;
           flex-direction: column;
           h2 {
@@ -2522,23 +2595,30 @@
             margin-bottom: 0px;
           }
           .image-flex.flex {
-            flex-wrap: wrap;
-            justify-content: space-around;
-            div {
-              margin: 0px;
-              padding: 10px 10px;
-            }
+            .except-image{
+              width: 100%;
+              margin: 0;
+              img {
+                width: 100%;
+                padding: 10px 20px;
+              }
             }
           }
         }
 
       }
+    }
     .koverta1,.koverta2,.koverta3,.koverta4,.koverta5,.koverta6{
+      width: 100%;
       padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
       .function-description-width {
         .width-flex.flex {
           .both.first-div{
-            margin: 0 30px 0 40px;
+            padding: 0 40px;
+            width: 100%;
+            margin-right: 0px;
             ul {
               margin-bottom: 0;
               li {
@@ -2546,13 +2626,12 @@
               }
             }
             .flex.pecati {
-              justify-content: center;
               margin-top: -30px;
             }
           }
         }
       }
-    }
+    }//end koverta
   }
 
    /*kancelarijski mat*/
@@ -2560,7 +2639,8 @@
     .function-description {
       .function-description-width.function-description-header {
         margin: 0px;
-        .margin {
+        padding: 0 20px;
+        .margin.last-div {
           display: flex;
           flex-direction: column;
           h2 {
@@ -2568,60 +2648,30 @@
             margin-bottom: 0px;
           }
           .image-flex.flex {
-            flex-wrap: wrap;
-            justify-content: space-around;
-            div {
-              margin: 0px;
-              padding: 10px 10px;
-            }
+            .except-image{
+              width: 100%;
+              margin: 0;
+              img {
+                width: 100%;
+                padding: 10px 20px;
+              }
             }
           }
         }
 
-      }
-    .kanc1{
-      padding-bottom: 40px;
-      .function-description-width {
-        .width-flex.flex {
-          .both.first-div{
-            margin: 0 30px 0 40px;
-          
-          }
-        }
       }
     }
-   }
-
-   /*potrosni mat*/
-   .content.content-background-image-potrosni{
-    .function-description {
-      .function-description-width.function-description-header {
-        margin: 0px;
-        .margin {
-          display: flex;
-          flex-direction: column;
-          h2 {
-            padding: 30px 20px;
-            margin-bottom: 0px;
-          }
-          .image-flex.flex {
-            flex-wrap: wrap;
-            justify-content: space-around;
-            div {
-              margin: 0px;
-              padding: 10px 10px;
-            }
-            }
-          }
-        }
-
-      }
-    .potrosni1,.potrosni2,.potrosni3,.potrosni4,.potrosni5,.potrosni6,.potrosni7,.potrosni8{
+    .kanc1{
+      width: 100%;
       padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
       .function-description-width {
         .width-flex.flex {
           .both.first-div{
-            margin: 0 30px 0 40px;
+            padding: 0 40px;
+            width: 100%;
+            margin-right: 0px;
             ul {
               margin-bottom: 0;
               li {
@@ -2629,14 +2679,67 @@
               }
             }
             .flex.pecati {
-              justify-content: center;
               margin-top: -30px;
             }
           }
         }
       }
-    }
+    }//end kanc
    }
+
+   /*potrosni mat*/
+   .content.content-background-image-potrosni{
+    .function-description {
+      .function-description-width.function-description-header {
+        margin: 0px;
+        padding: 0 20px;
+        .margin.last-div {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            padding: 30px 20px;
+            margin-bottom: 0px;
+          }
+          .image-flex.flex {
+            .except-image{
+              width: 100%;
+              margin: 0;
+              img {
+                width: 100%;
+                padding: 10px 20px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .potrosni1,.potrosni2,.potrosni3,.potrosni4,.potrosni5,.potrosni6,.potrosni7,.potrosni8{
+      width: 100%;
+      padding-bottom: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      .function-description-width {
+        .width-flex.flex {
+          .both.first-div{
+            padding: 0 40px;
+            width: 100%;
+            margin-right: 0px;
+            ul {
+              margin-bottom: 0;
+              li {
+                padding: 0;
+              }
+            }
+            .flex.pecati {
+              margin-top: -30px;
+            }
+          }
+        }
+      }
+    }//end potrosni
+   }
+
    /*servis i podrska*/
   .function-description.function-description-footer.function-description-footer-servis-podrska{
     border: none;
@@ -2664,6 +2767,20 @@
 
   /*kontakt*/
   .loaded {
+    .slider-image{
+      .carousel-inner .item .overlay.animated.fadeInDownBig, .slider-image .carousel-inner .item-active .overlay.animated.fadeInDownBig{
+        margin-left: -215px;
+      }
+      #carousel-example-generic{
+        .carousel-indicators{
+          li{
+            height: 25px;
+            width: 25px;
+            margin: 7px;
+          }
+        }
+      }
+    }
     width: 100%;
     .i4ewOd-pzNkMb-tJHJj {
       display: none;
